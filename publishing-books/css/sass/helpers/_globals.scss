@@ -1,0 +1,32 @@
+* {
+    font-family: 'Lora', serif !important;
+}
+
+.page-section {
+    padding: 50px 0;
+}
+
+.intro-head {
+    .intro {
+        position: relative;
+        background-image: url('../images/about/01.jpg');
+        background-position: 50% 0%;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 50vh;
+        .overlay {
+            @include overlay();
+            // background-color: rgba($color: #000000, $alpha: 0.8);
+            .content {
+                margin-top: 150px;
+                h2 {
+                    @include font($headFont,
+                    500,
+                    1.2,
+                    $darkColor,
+                    "capitalize");
+                }
+            }
+        }
+    }
+}

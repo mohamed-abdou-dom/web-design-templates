@@ -1,0 +1,359 @@
+/* start my framework */
+
+.page {
+    padding: 4rem 0;
+}
+
+/* end my framework */
+
+/* index.html */
+
+/* top navbar */
+
+.navbar-dark{
+    background-color: #1E1E27 !important;
+}
+
+.top-nav-left{
+    color: #b5aec4;
+    font-size: 13px !important;
+    text-transform: uppercase;
+}
+
+.top-drop{
+    color: #b5aec4 !important;
+    font-weight: 400;
+    font-size: 13px;
+    border-left: 1px solid brown;
+}
+
+.top-menu{
+    min-width: 0;
+    padding: 0;
+    border-radius: 0;
+    margin-top: 8px;
+    border: 1px solid beige;
+}
+.top-menu .dropdown-item{
+    color: #232530;
+    border-bottom: solid 1px #dddddd;
+    font-size: 13px;
+    line-height: 3;
+}
+/* end top navbar */
+/* bottom navbar */
+
+.navbar-light{
+    width: 100%;
+    background: #FFFFFF !important;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-light .navbar-brand{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-brand span{
+    color: red;
+}
+
+.navbar-light .mx-auto .nav-link{
+    color: #282828 !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.mx-auto .nav-link:hover{
+    color: #b5aec4 !important;
+}
+
+.nav-item .fa,.nav-item .fas{
+    cursor: pointer;
+}
+
+.nav-item .fa-shopping-cart{
+    background-color: cornsilk;
+    border-radius: 50%;
+    font-size: 11px;
+    padding: 10px;
+}
+
+/* end bottom navbar */
+
+/* start main intro */
+
+header .mainIntro {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background-image: url("../images/ma/main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+@media (min-width: 992px) {
+    header .mainIntro {
+        height: 100vh;
+        min-height: 40rem;
+        padding-top: 72px;
+        padding-bottom: 0;
+    }
+}
+
+/* end main intro */
+
+/* start categories */
+
+.categories .card{
+    border: none;
+    border-radius: 0;
+}
+
+.categories .card button{
+    margin-top: 93px;
+    margin-left: 88px;
+    font-size: 24px;
+    padding: 8px 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #FFFFFF !important;
+    color: #1e1e27 !important;
+}
+.categories .card button:hover{
+    color: #b5aec4 !important;
+    background-color: #FFFFFF;
+}
+/* end categories */
+
+/* start pills */
+.pills .nav-pills .active{
+    color: white !important;
+    background-color: #FE7C7F !important;
+}
+.pillsH{
+    color: #282828 !important;
+}
+.pills .btn-light{
+    background-color: #fff;
+    font-size: 16px;
+    padding: 4px 30px;
+    border: 1px solid antiquewhite;
+    text-transform: capitalize;
+}
+.pills .tab-content{
+    margin-top: 50px;
+}
+.pills .tab-content .card{
+    box-shadow: 0 25px 29px rgba(63, 78, 100, 0.08);
+    border: solid 0px rgba(235,235,235,1);
+    margin-bottom: 10px;
+}
+.pills .tab-content .card:hover{
+    box-shadow: 0 25px 29px rgba(63, 78, 100, 0.20);
+    border: solid 0px rgba(235,235,235,1);
+    cursor: pointer;
+}
+.pills .tab-content .card .dis{
+    text-decoration: line-through;
+    font-weight: 500;
+    color: #b9b4c7;
+    text-decoration: line-through;
+    line-height: 30px;
+    margin-top: 21px;
+}
+.pills .tab-content .card .prise{
+    font-size: 24px;
+    color: #fe4c50;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 2px;
+}
+.pills .tab-content .card-footer{
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    background-color:#007bff ;
+}
+.pills .tab-content .btn{
+    border-radius: 0;
+    background-color: #FE7C7F;
+    border:none;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+/* end pills */
+
+/* start best seller */
+
+
+/* start seller */
+
+.seller .card{
+    border: none;
+    border-radius: 0;
+}
+
+.seller .card button{
+    margin-top: 155px;
+    margin-left: 180px;
+    color: #282828 !important;
+    font-size: 24px;
+    padding: 8px 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.seller .card button:hover{
+    color: #b5aec4 !important;
+    background-color: #FFFFFF;
+}
+/* end seller */
+
+/* end best seller */
+
+
+
+/* single product */
+
+
+.single-product .header .image{
+    text-align: center;
+}
+.single-product .header .itemImage{
+    border: 1px solid aquamarine;
+    border-radius: 5%;
+    height: 281px;
+    width: 260px;
+}
+.single-product .header span{
+    text-decoration: line-through;
+    font-weight: 500;
+    color: #b9b4c7;
+    text-decoration: line-through;
+    line-height: 30px;
+    margin-top: 21px;
+}
+.single-product .header .prise{
+    font-size: 24px;
+    color: #fe4c50;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 2px;
+}
+.single-product .header button{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+}
+.single-product .header i{
+    color: chocolate;
+    margin-left: 50px;
+    border: 2px solid darkgoldenrod;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.single-product .header i:hover{
+    padding: 12px;
+    background-color: beige;
+}
+
+.single-product .nav-pills a{
+    color: #282828 !important;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 50px;
+}
+.single-product .nav-pills a:hover{
+    text-decoration: none;
+}
+.single-product .nav-pills .active{
+    color: #FE7C7F !important;
+    border-bottom: solid 1px #fe4c50;
+}
+.single-productH{
+    color: #282828 !important;
+}
+.single-product .btn-light{
+    background-color: #fff;
+    font-size: 16px;
+    padding: 4px 30px;
+    border: 1px solid antiquewhite;
+    text-transform: capitalize;
+}
+
+/* start all products */
+.all-products input{
+    border: solid 1px #ecedee;
+    padding: 13px 15px;
+    width: 285px;
+    margin-top: 90px;
+    margin-left: -50px;
+}
+.all-products button{
+    border-radius: 0;
+    background-color: #FE7C7F;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 10px 70px;
+    margin-top: 15px;
+}
+.all-products .card{
+    box-shadow: 0 25px 29px rgba(63, 78, 100, 0.08);
+    border: solid 0px rgba(235,235,235,1);
+    margin-bottom: 10px;
+}
+.all-products .card:hover{
+    box-shadow: 0 25px 29px rgba(63, 78, 100, 0.20);
+    border: solid 0px rgba(235,235,235,1);
+    cursor: pointer;
+}
+.all-products .card-footer{
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    background-color:#007bff ;
+}
+.all-products .btn{
+    border-radius: 0;
+    background-color: #FE7C7F;
+    border:none;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.all-products .select select{
+    cursor: pointer;
+    border: solid 1px #ecedee;
+    padding: 8px 15px;
+    width: 185px;
+}
+
+.all-products .dis{
+    text-decoration: line-through;
+    font-weight: 500;
+    color: #b9b4c7;
+    text-decoration: line-through;
+    line-height: 30px;
+    margin-top: 21px;
+}
+.all-products .prise{
+    font-size: 24px;
+    color: #fe4c50;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 2px;
+}
+/* end all products */

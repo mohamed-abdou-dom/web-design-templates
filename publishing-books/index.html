@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- uikit -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/framework/uikit.min.css" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize/normalize.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header class="main-head">
+        <nav class="uk-navbar-container top-nav" uk-navbar>
+
+            <div class="uk-navbar-left">
+                <div class="uk-container">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#"><span uk-icon="icon:facebook; ratio: 1"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span uk-icon="icon:google-plus; ratio: 1"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span uk-icon="icon:twitter; ratio: 1"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span uk-icon="icon:instagram; ratio: 1"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#" class="company-logo">
+                            <div>
+                                <div class="head"><span>publishing</span> company</div>
+                                <div class="uk-navbar-subtitle">book publishing company</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+                <div class="uk-container">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <form class="uk-search uk-search-default">
+                                <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                                <input class="uk-search-input" type="search" placeholder="Search...">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <nav class="uk-navbar-container bottom-nav" uk-navbar>
+            <div class="uk-navbar-center">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li><a class="link" href="index.html">home</a></li>
+                        <li><a class="link" href="about.html">about</a></li>
+                        <li><a class="link" href="top-seller.html">top sellers</a></li>
+                        <li><a class="link" href="book.html">books</a></li>
+                        <li><a class="link" href="author.html">author</a></li>
+                        <li><a class="link" href="blog.html">blog</a></li>
+                        <li><a class="link" href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-flip">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- mobile menu -->
+        <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-active uk-margin-medium-bottom">
+                        <a href="index.html" class="company-logo">
+                            <div>
+                                <div class="head"><span>publishing</span> company</div>
+                                <div class="uk-navbar-subtitle">book publishing company</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="top-seller.html">Top Sellers</a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="book.html">Books</a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="author.html">Author</a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="uk-nav-divider uk-margin-small-bottom"></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- end mobile menu -->
+
+        <div class="intro">
+            <div class="overlay">
+                <div class="uk-container">
+                    <div class="content">
+                        <h2>Good books don't give up all<br> their secrets at once</h2>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <button class="uk-button uk-button-primary">view all books</button>
+                        <button class="uk-button uk-button-secondary">explore now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- end header -->
+
+    <!-- start type -->
+
+    <div class="types">
+        <div class="uk-container">
+            <div class="card-group uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small uk-grid-match uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <div class="image">
+                            <img src="images/icons/teaching.png" alt="">
+                        </div>
+                        <h3 class="uk-card-title">Children's Book</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. elit sicing consectetur.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <div class="image">
+                            <img src="images/icons/book.png" alt="">
+                        </div>
+                        <h3 class="uk-card-title">Romance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. elit sicing consectetur.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <div class="image">
+                            <img src="images/icons/create.png" alt="">
+                        </div>
+                        <h3 class="uk-card-title">Art & Architecture</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. elit sicing consectetur.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <div class="image">
+                            <img src="images/icons/history.png" alt="">
+                        </div>
+                        <h3 class="uk-card-title">History</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. elit sicing consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end types -->
+
+    <!-- start stats -->
+
+    <div class="stats page-section uk-background-muted">
+        <div class="uk-container">
+            <div class="content uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small uk-grid-match uk-text-center" uk-grid>
+                <div class="part">
+                    <h3>75,678</h3>
+                    <span>ACTIVE READERS</span>
+                </div>
+                <div class="part">
+                    <h3>3,040</h3>
+                    <span>TOTAL PAGES</span>
+                </div>
+                <div class="part">
+                    <h3>283</h3>
+                    <span>CUP OF COFFEE</span>
+                </div>
+                <div class="part">
+                    <h3>14,500</h3>
+                    <span>FACEBOOK FANS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end stats -->
+
+    <!-- start brief -->
+
+    <div class="breif page-section">
+        <div class="uk-container">
+            <div class="uk-child-width-1-1@s uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+                <div>
+                    <div class="image">
+                        <img src="images/index/01.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        <h6>WELCOME TO PUBLISHING COMPANY</h6>
+                        <h1>Publishing Company Created By Authors</h1>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text
+                            should turn around and return to its own, safe country.</p>
+                        <button class="uk-button uk-button-default">view all authors</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end brief -->
+
+    <!-- start new release -->
+
+    <div class="new-release page-section">
+        <div class="intro uk-text-center">
+            <h6>books</h6>
+            <h1>new release</h1>
+        </div>
+        <div class="uk-container">
+            <div class="uk-child-width-1-1@s uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1@s uk-child-width-1-2@m uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="images/index/02.jpg" alt="">
+                            <div class="overlay">
+                                <ul class="uk-iconnav uk-iconnav-vertical">
+                                    <li>
+                                        <a href="#" uk-icon="icon: cart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: heart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: search;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: trash;ratio:1"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h6>12$</h6>
+                                <h5>You Are Your Only Limit</h5>
+                                <span>By John Nathan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="images/index/03.jpg" alt="">
+                            <div class="overlay">
+                                <ul class="uk-iconnav uk-iconnav-vertical">
+                                    <li>
+                                        <a href="#" uk-icon="icon: cart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: heart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: search;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: trash;ratio:1"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h6>12$</h6>
+                                <h5>You Are Your Only Limit</h5>
+                                <span>By John Nathan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="images/index/04.jpg" alt="">
+                            <div class="overlay">
+                                <ul class="uk-iconnav uk-iconnav-vertical">
+                                    <li>
+                                        <a href="#" uk-icon="icon: cart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: heart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: search;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: trash;ratio:1"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h6>12$</h6>
+                                <h5>You Are Your Only Limit</h5>
+                                <span>By John Nathan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="images/index/05.jpg" alt="">
+                            <div class="overlay">
+                                <ul class="uk-iconnav uk-iconnav-vertical">
+                                    <li>
+                                        <a href="#" uk-icon="icon: cart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: heart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: search;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: trash;ratio:1"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h6>12$</h6>
+                                <h5>You Are Your Only Limit</h5>
+                                <span>By John Nathan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="images/index/06.jpg" alt="">
+                            <div class="overlay">
+                                <ul class="uk-iconnav uk-iconnav-vertical">
+                                    <li>
+                                        <a href="#" uk-icon="icon: cart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: heart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: search;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: trash;ratio:1"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h6>12$</h6>
+                                <h5>You Are Your Only Limit</h5>
+                                <span>By John Nathan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="images/index/08.jpg" alt="">
+                            <div class="overlay">
+                                <ul class="uk-iconnav uk-iconnav-vertical">
+                                    <li>
+                                        <a href="#" uk-icon="icon: cart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: heart;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: search;ratio:1"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" uk-icon="icon: trash;ratio:1"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h6>12$</h6>
+                                <h5>You Are Your Only Limit</h5>
+                                <span>By John Nathan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- end release -->
+
+    <!-- start testmonials -->
+
+    <div class="testmonials">
+        <div class="image">
+            <div class="overlay">
+            </div>
+        </div>
+        <div class="uk-container">
+            <div uk-slider="autoplay:true">
+                <div class="uk-position-relative">
+                    <div class="uk-slider-container uk-light">
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-2@s uk-child-width-1-3@m">
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-header">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" width="40" height="40" src="images/index/s1.jpg">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h3 class="uk-card-title uk-margin-remove-bottom">john smith</h3>
+                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-header">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" width="40" height="40" src="images/index/s2.jpg">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h3 class="uk-card-title uk-margin-remove-bottom">alian mams</h3>
+                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-header">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" width="40" height="40" src="images/index/s3.jpg">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h3 class="uk-card-title uk-margin-remove-bottom">sara joas</h3>
+                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-header">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" width="40" height="40" src="images/index/s4.jpg">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h3 class="uk-card-title uk-margin-remove-bottom">kitomant josa</h3>
+                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-header">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" width="40" height="40" src="images/index/s5.jpg">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h3 class="uk-card-title uk-margin-remove-bottom">jolia541</h3>
+                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-header">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" width="40" height="40" src="images/index/s6.jpg">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h3 class="uk-card-title uk-margin-remove-bottom">halau fksnf</h3>
+                                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- end testmonials -->
+
+    <!-- start recent blog -->
+
+    <div class="recent-blog page-section">
+        <div class="intro uk-text-center">
+            <h6>blog</h6>
+            <h1>recent blog</h1>
+        </div>
+        <div class="uk-container">
+            <div class="uk-child-width-1-1@s uk-child-width-1-3@m uk-grid-small uk-grid-match uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="images/index/b1.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="cal">
+                                <span>02
+                                    may
+                                    2020</span>
+                            </div>
+                            <h3>New Friends With Books</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="images/index/b2.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="cal">
+                                <span>02
+                                    may
+                                    2020</span>
+                            </div>
+                            <h3>New Friends With Books</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="images/index/b3.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="cal">
+                                <span>02
+                                may
+                                2020</span>
+                            </div>
+                            <h3>New Friends With Books</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- end recent blog -->
+
+    <script src="js/framework/uikit.min.js"></script>
+    <script src="js/framework/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 4000px;
+}
+
+.page-section {
+  padding: 100px 0;
+}
+
+.row {
+  margin: 0;
+}
+
+header.mainHeader .main-navbar {
+  transition: ease-in 500ms;
+  background: transparent;
+  text-transform: capitalize;
+  padding: 15px 0;
+}
+header.mainHeader .main-navbar .navbar-brand {
+  font-size: 1.6em;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+header.mainHeader .main-navbar .nav-item {
+  padding: 0 8px;
+}
+header.mainHeader .main-navbar .nav-item .nav-link {
+  font-size: 1em;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+header.mainHeader .main-navbar .nav-item button {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+header.mainHeader .main-navbar.scrolled {
+  background: #1E1835;
+}
+header.mainHeader .content {
+  position: relative;
+  background-image: url("../images/main.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+header.mainHeader .content .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(142, 152, 175, 0.5);
+}
+header.mainHeader .content .overlay .intro {
+  text-align: center;
+  margin-top: 20vh;
+  text-transform: capitalize;
+}
+header.mainHeader .content .overlay .intro h1 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  header.mainHeader .content .overlay .intro h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #FFFFFF;
+  }
+}
+header.mainHeader .content .overlay .intro p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #d6d6e4;
+}
+header.mainHeader .content .overlay .intro button {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  padding: 10px 30px;
+}
+
+.coach .intro {
+  text-align: center;
+  text-transform: capitalize;
+}
+.coach .intro h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1E1835;
+}
+.coach .intro p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #B8B5C3;
+}
+.coach .content {
+  margin-top: 50px;
+}
+.coach .content img {
+  width: 100%;
+  height: 90%;
+  border-radius: 5px;
+}
+.coach .content p {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.9;
+  color: #B8B5C3;
+  margin: 10px 0;
+}
+.coach .content .last-img {
+  margin-top: 65px;
+}
+
+.passion {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.passion h1 {
+  font-size: 2.65rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1E1835;
+  margin-bottom: 10px;
+}
+.passion p {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #B8B5C3;
+  margin: 0px 0 40px 0;
+}
+.passion form .input-group {
+  width: 40%;
+}
+.passion form button {
+  width: 10%;
+}
+.passion small {
+  text-align: left;
+}
+
+.proadcast {
+  background-color: #FF5938;
+}
+.proadcast h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #FFFFFF;
+}
+.proadcast p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 2;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .proadcast .second .image {
+    margin-bottom: 30px;
+  }
+}
+.proadcast .image {
+  position: relative;
+}
+.proadcast .image img {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+}
+.proadcast .image .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(30, 24, 53, 0.7);
+  border-radius: 8px;
+}
+.proadcast .image .overlay button {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  padding: 20px 30px;
+  text-transform: capitalize;
+}
+.proadcast .image:hover .overlay {
+  display: inline;
+}
+
+.life .intro {
+  text-align: center;
+}
+.life .intro h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1E1835;
+}
+.life .intro p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.8;
+  color: #B8B5C3;
+}
+.life .cards {
+  margin-top: 80px;
+}
+.life .cards .content {
+  position: relative;
+}
+.life .cards .content .image {
+  height: 400px;
+}
+.life .cards .content .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.life .cards .content .card {
+  border-radius: 0;
+  position: absolute;
+  top: 70%;
+  border-top-right-radius: 5px;
+  border: 1px solid #fff;
+}
+.life .cards .content .card h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1E1835;
+  text-transform: capitalize;
+}
+.life .cards .content .card p {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #B8B5C3;
+  text-transform: capitalize;
+}
+.life .cards .content .card a {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #FF5938;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-decoration-color: #FF5938;
+  text-decoration-thickness: auto;
+}
+@media (max-width: 767px) {
+  .life .cards .content {
+    margin-bottom: 100px;
+  }
+}
+
+.workshops .image img {
+  width: 100%;
+}
+.workshops .card {
+  text-align: center;
+}
+.workshops .card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1E1835;
+}
+.workshops .card h6 {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.8;
+  color: #B8B5C3;
+}
+
+/*# sourceMappingURL=style.css.map */

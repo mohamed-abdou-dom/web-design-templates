@@ -1,0 +1,22 @@
+.about-us {
+    .head {
+        h6 {
+            @include font(17px, 500, 1.2, $headsColor, 'uppercase');
+        }
+        h1 {
+            @include font($headFont, 500, 1.2, $headColor, 'capitalize');
+            margin: 0;
+        }
+    }
+    .body {
+        width: 80%;
+        margin: auto;
+        p {
+            @include font($paraFont, 500, 1.8, $paraColor, 'none');
+            margin: 50px 0;
+        }
+        q {
+            @include font(32px, 500, 1.2, $headColor, 'capitalize');
+        }
+    }
+}

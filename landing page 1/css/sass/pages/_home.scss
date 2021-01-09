@@ -1,0 +1,162 @@
+.coach {
+    .intro {
+        text-align: center;
+        text-transform: capitalize;
+        h1 {
+            @include font($primaryFont, 600, 1.2, $primaryColor);
+        }
+        p {
+            @include font($smallFont, 100, 1.6, $infoColor);
+        }
+    }
+    .content {
+        margin-top: 50px;
+        img {
+            width: 100%;
+            height: 90%;
+            border-radius: 5px;
+        }
+        p {
+            @include font($secondryFont, 100, 1.9, $infoColor);
+            margin: 10px 0;
+        }
+        .last-img {
+            margin-top: 65px;
+        }
+    }
+}
+
+.passion {
+    text-align: center;
+    padding-bottom: 100px;
+    h1 {
+        @include font(2.65rem, 700, 1.2, $primaryColor);
+        margin-bottom: 10px;
+    }
+    p {
+        @include font($secondryFont, 100, 1.2, $infoColor);
+        margin: 0px 0 40px 0;
+    }
+    form {
+        .input-group {
+            width: 40%;
+        }
+        button {
+            width: 10%;
+        }
+    }
+    small {
+        text-align: left;
+    }
+}
+
+.proadcast {
+    background-color: $secondryColor;
+    h1 {
+        @include font($medFont, 700, 1.1, $lightColor);
+    }
+    p {
+        @include font($smallFont, 100, 2, $lightColor)
+    }
+    .second {
+        .image {
+            @include maxWidth(767px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .image {
+        position: relative;
+        img {
+            width: 100%;
+            border-radius: 8px;
+            height: 100%;
+        }
+        .overlay {
+            display: none;
+            @include overlay;
+            background-color: rgba($color: $primaryColor, $alpha: 0.7);
+            border-radius: 8px;
+            button {
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                padding: 20px 30px;
+                text-transform: capitalize;
+            }
+        }
+        &:hover {
+            .overlay {
+                display: inline;
+            }
+        }
+    }
+}
+
+.life {
+    .intro {
+        text-align: center;
+        h1 {
+            @include font($primaryFont, 600, 1.2, $primaryColor);
+        }
+        p {
+            @include font($smallFont, 200, 1.8, $infoColor);
+        }
+    }
+    .cards {
+        margin-top: 80px;
+        .content {
+            position: relative;
+            .image {
+                height: 400px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                }
+            }
+            .card {
+                border-radius: 0;
+                position: absolute;
+                top: 70%;
+                border-top-right-radius: 5px;
+                border: 1px solid #fff;
+                h5 {
+                    @include font(1.3rem, 500, 1.2, $primaryColor);
+                    text-transform: capitalize;
+                }
+                p {
+                    @include font($secondryFont, 100, 1.6, $infoColor);
+                    text-transform: capitalize;
+                }
+                a {
+                    @include font($secondryFont, 700, 1.2, $secondryColor);
+                    text-transform: capitalize;
+                    text-decoration: underline;
+                    text-decoration-color: $secondryColor;
+                    text-decoration-thickness: auto;
+                }
+            }
+            @include maxWidth(767px) {
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+.workshops {
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+    .card {
+        text-align: center;
+        h2 {
+            @include font($primaryFont, 700, 1.2, $primaryColor);
+        }
+        h6 {
+            @include font($secondryFont, 100, 1.8, $infoColor);
+        }
+    }
+}

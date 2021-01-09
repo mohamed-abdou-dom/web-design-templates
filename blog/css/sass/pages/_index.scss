@@ -1,0 +1,198 @@
+.intro {
+    .image {
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        img {
+            height: 100%;
+            width: 100%;
+            transition: .5s all ease-in-out;
+        }
+        &:hover img {
+            transform: scale(1.3);
+        }
+        &:hover h2 {
+            color: $primaryColor;
+        }
+        .overlay {
+            @include overlay();
+            background-color: rgba($color: #1c150e, $alpha: .3);
+            .content {
+                color: $lightColor;
+                padding: 0 15px;
+                position: absolute;
+                bottom: 30px;
+                h2 {
+                    margin-left: 15px;
+                    transition: .6s all ease-in-out;
+                    @include font(2rem, 700, 1.2, none);
+                }
+                p {
+                    text-transform: capitalize;
+                    @include font(1rem, 300, 1.6, none);
+                }
+                .user-details {
+                    @include font(1rem, 300, 1.6, none);
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+.blog {
+    .right-side {
+        .row {
+            margin-bottom: 100px;
+            @include maxWidth(767px) {
+                margin-bottom: 0px;
+            }
+            .col-md-6 {
+                @include maxWidth(767px) {
+                    margin-bottom: 70px;
+                }
+            }
+        }
+        .article {
+            margin-right: 20px;
+            position: relative;
+            .image {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    transition: 1s all ease-in-out;
+                }
+                &:hover img {
+                    transform: scale(1.2);
+                }
+            }
+            .content {
+                background-color: #fff;
+                max-width: 85%;
+                padding: 25px 22px;
+                position: absolute;
+                left: 7.5%;
+                top: 60%;
+                border-right: 1px solid #f3f3f3;
+                border-bottom: 1px solid #f3f3f3;
+                h2 {
+                    @include font(1.5rem, 500, 1.2, $primaryColor);
+                }
+                p,
+                span {
+                    @include font(.9rem, 300, 1.6, $infoColor);
+                    text-transform: capitalize;
+                }
+                span {
+                    margin-left: 20px;
+                }
+            }
+            &:hover h2 {
+                color: #c3abd6;
+            }
+        }
+        nav {
+            ul {
+                width: 50%;
+                margin: auto;
+                li {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    .left-side {
+        .user-details {
+            background-color: $secondryColor;
+            padding: 30px;
+            .card {
+                margin: auto;
+                border: none;
+                border-radius: 0;
+                .card-body {
+                    padding: 0;
+                    padding-top: 20px;
+                    margin: 0;
+                    background-color: $secondryColor;
+                    h5 {
+                        color: $lightColor;
+                        text-transform: capitalize;
+                    }
+                    p {
+                        color: $infoColor;
+                    }
+                }
+            }
+        }
+        .popular {
+            background-color: $secondryColor;
+            padding: 30px;
+            .nav-pills {
+                .active {
+                    background-color: unset;
+                }
+            }
+            .row {
+                padding: 20px 0;
+                &:hover {
+                    a {
+                        color: $primaryColor;
+                    }
+                }
+            }
+            h6 {
+                a {
+                    text-decoration: none;
+                    color: $lightColor;
+                    transition: .5s all ease-in-out;
+                }
+            }
+            span {
+                color: $infoColor;
+            }
+        }
+        .categories {
+            background-color: $secondryColor;
+            padding: 30px;
+            h2 {
+                @include font(1.5rem, 700, 1.2, $lightColor);
+                text-transform: capitalize;
+            }
+            li {
+                a {
+                    color: $infoColor;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    transition: .3s all ease-in-out;
+                    &:hover {
+                        color: $lightColor;
+                    }
+                }
+            }
+        }
+        .tags {
+            background-color: $secondryColor;
+            padding: 30px;
+            h2 {
+                @include font(1.5rem, 700, 1.2, $lightColor);
+                text-transform: capitalize;
+            }
+            .links {
+                a {
+                    padding: 19px 20px;
+                    border-radius: 0;
+                    margin-bottom: 5px;
+                    background-color: #2b3340;
+                    text-transform: capitalize;
+                    transition: .6s all ease-in-out;
+                    width: 100px;
+                    @include font(.8rem, 500, 1.2, $infoColor);
+                    &:hover {
+                        background-color: $primaryColor;
+                        color: $lightColor;
+                    }
+                }
+            }
+        }
+    }
+}

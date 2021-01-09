@@ -1,0 +1,283 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+h2{
+    color: #9CA9A7;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h3{
+    color: #9CA9A7;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+p{
+    color: #D0D0D0;
+    font-weight: 300;
+}
+
+.btn-primary{
+    font-size: 20px;
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #6CDAA1;
+    font-weight: 900;
+    border: 2px solid #82E2A0;
+    text-transform: capitalize;
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* start slider */
+
+.header{
+    height: 560px;
+    overflow: hidden;
+}
+
+.header .slider{
+    background-image: url('../img/main-bg.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.header .slider .intro{
+    padding-top: 160px;
+}
+.header .slider .intro h1{
+    color: ghostwhite;
+    font-size: 45px;
+    border-top: 6px solid ghostwhite;
+    border-bottom: 6px solid ghostwhite;
+    width: 525px;
+    margin: 0 auto;
+}
+/* end slider */
+
+/* start navbar */
+
+.navbar{
+    background-color: #252F31;
+    overflow: hidden;
+}
+
+.navbar .nav-brand{
+    float: left;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.navbar .nav-brand span{
+    color: #29D47B;
+}
+
+.navbar .nav-items{
+    overflow: hidden;
+    float: right;
+}
+
+.navbar .nav-items li{
+    list-style: none;
+    float: left;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.navbar .nav-items li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-items li a:hover{
+    color: #29D47B;
+}
+
+/* end navbar */
+
+/* start features */
+
+.features{
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.feat{
+    float: left;
+    width: 33.3333%;
+    padding-right: 30px;
+}
+
+/* end features */
+
+/* start about us */
+
+.about-us{
+    overflow: hidden;
+    background-color: #F2F2F2;
+}
+
+.about-us .image{
+    float: left;
+    width: 40%;
+}
+
+.about-us .image img{
+    width: 100%;
+}
+
+.about-us .content{
+    float: left;
+    width: 60%;
+    padding: 30px 0;
+}
+.about-us .info{
+    margin-left: 50px;
+}
+.about-us .hobbies{
+    margin-left: 50px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.about-us .hobbie{
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+}
+/* end about us */
+
+/* start my skills */
+
+.my-skills{
+    overflow: hidden;
+    padding: 30px;
+}
+.my-skills .desc{
+    width: 50%;
+    float: left;
+}
+.my-skills .progress{
+    width: 50%;
+    float: left;
+}
+.my-skills .progress .course{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.my-skills .progress .course span{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: dimgrey;
+    font-weight: 900;
+}
+.my-skills .progress .course div{
+    width: 80%;
+    height: 25px;
+    background-color: lavender;
+}
+.my-skills .progress .course div span{
+    background-color: orange;
+    width: 247px;
+    height: 25px;
+    position: absolute;
+    color: #fff;
+    padding-left: 5px;
+    font-size: 20px;
+}
+/* end my skills */
+
+/* start resume */
+
+.resume{
+    background-color: #F2F2F2;
+    text-align: center;
+    padding: 50px 0;
+}
+.resume p{
+    line-height: 1.6rem;
+}
+
+/* end resume */
+
+/* start education */
+
+.education{
+    overflow: hidden;
+    padding: 30px 0;
+}
+.education .desc{
+    width: 50%;
+    float: left;
+}
+.education .desc p{
+    line-height: 1.6rem;
+}
+.education .diplomas{
+    width: 50%;
+    float: left;
+}
+.education .diplomas .diploma{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.education .diplomas .diploma h3,.education .diplomas .diploma p.subtitle{
+    margin: 3px;
+}
+
+.education .diplomas .diploma .subtitle{
+    text-transform: capitalize;
+}
+.education .diplomas .diploma .subtitle span{
+    font-weight: 900;
+}
+.education .diplomas .diploma .gpa{
+    background-color: orange;
+    color: #fff;
+    font-weight: 900;
+    font-size: 12px;
+    padding: 4px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+
+/* end education */
+
+/* start portfolio */
+
+.portfolio{
+    padding: 30px 0;
+    overflow: hidden;
+}
+.portfolio h2,.portfolio p{
+    text-align: center;
+}
+.portfolio .projs{
+    margin-top: 70px;
+    overflow: hidden;
+}
+.portfolio .proj{
+    width: 33.3333%;
+    float: left;
+}
+.portfolio .proj .img{
+    margin-top: 20px;
+}
+.portfolio .proj img{
+    width: 92%;
+}
+
+
+/* end portfolio */

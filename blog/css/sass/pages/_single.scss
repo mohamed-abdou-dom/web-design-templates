@@ -1,0 +1,70 @@
+.single-head {
+    background-image: url('../images/single/01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    .overlay {
+        @include overlay();
+        h2 {
+            text-align: center;
+            margin-top: 210px;
+            color: #fff;
+            font-size: 50px;
+            font-weight: 700;
+            text-transform: capitalize;
+            letter-spacing: 5px;
+        }
+    }
+}
+
+.blog {
+    .right-side {
+        .single-article {
+            h2 {
+                @include font(2rem,
+                500,
+                1.2,
+                $primaryColor);
+                margin: 30px 0;
+            }
+            p {
+                @include font(1rem,
+                300,
+                1.6,
+                $infoColor);
+                text-transform: capitalize;
+                margin: 30px 0;
+            }
+            .items {
+                a {
+                    padding: 10px 15px;
+                    border-radius: 0;
+                    margin-bottom: 5px;
+                    background-color: #2b3340;
+                    text-transform: capitalize;
+                    transition: .6s all ease-in-out;
+                    width: 100px;
+                    text-decoration: none;
+                    @include font(.8rem,
+                    500,
+                    1.2,
+                    $infoColor);
+                    &:hover {
+                        background-color: $primaryColor;
+                        color: $lightColor;
+                    }
+                }
+                .user {
+                    text-transform: uppercase;
+                    float: right;
+                    margin-right: 20px;
+                    @include font(1 rem,
+                    700,
+                    1.2,
+                    $darkColor);
+                }
+            }
+        }
+    }
+}

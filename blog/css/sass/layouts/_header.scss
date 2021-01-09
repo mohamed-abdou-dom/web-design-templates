@@ -1,0 +1,24 @@
+nav.main-navbar {
+    transition: ease-in 500ms;
+    background: transparent;
+    padding: 15px;
+    // background-color: $primaryColor;
+    color: $lightColor;
+    .navbar-nav {
+        position: relative;
+        left: 50%;
+        transform: translatex(-50%);
+        .nav-item {
+            padding: 0 5px;
+            text-transform: uppercase;
+            @include font(.9rem, 500, 1.2, $lightColor);
+            a {
+                color: $lightColor;
+            }
+        }
+    }
+}
+
+.main-navbar.scrolled {
+    background: $primaryColor;
+}

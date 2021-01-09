@@ -1,0 +1,15 @@
+This template serves the category concerned with e-learning, which contains more than one part in the field of education.
+
+The first part is the main page and contains the most common courses and articles in the site and also contains a brief overview of the team site and finally contains the part of the communication of users in the event of problems or questions.
+
+The second part contains the courses provided by the site and this page contains many cards ,representing each card a specific course by name, the description of each course and a button for details. When the user presses this button we move to the page to view the details of this course and there In this page the button to take the course (enroll the course) and when pressed by the user is a transfer to the lesson page for this course and the lesson page contains the video,playlist lesson and comments for this lesson.
+
+The third part contains the articles provided by the site and contains this page of many articles, each article in terms of name, description and a button to view details. When the user presses this button, we move to the page to view the details of this article.
+
+Part four contains the tests provided by the site and this page contains many tests Each test in terms of name, description, success rate, result and special button to start this test. When the user presses this button we offer questions for this exam and in another These questions have a button to display the correct and incorrect result and answers.
+
+Part five contains an ide,ide is a place for users to do some exercises on html,css.javascript coding.
+
+Part six contains the profile page in which the user can modify his personal data ,courses and articles.
+
+The template has two pages to login and register on the site.

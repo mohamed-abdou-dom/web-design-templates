@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IDE</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body onload="ready()">
+
+
+<a href="index.html" class="btn btn-info btn-lg btn-block">Back To Main Page</a>
+<div class="row">
+	<div class="col-md-6">
+		<div style="height: 610px" id="editor" class="alert alert-success" role="alert">
+	</div>		
+	</div>
+	<div class="col-md-6">
+		<iframe  style="height: 610px; width: 650px;" id="iframe" class="alert alert-success" role="alert">
+		  
+		</iframe>		
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	
+	function update(){
+
+		var idoc =document.getElementById('iframe').contentWindow.document;
+		idoc.open();
+		idoc.write(editor.getValue());
+		idoc.close();
+
+	}
+
+
+/*
+themes :
+Chrome
+Clouds
+Clouds Midnight
+Cobalt
+Crimson Editor
+Dawn
+Eclipse
+Idle Fingers
+Kr Theme
+Merbivore
+Merbivore Soft
+Mono Industrial
+Monokai
+Pastel On Dark
+Solarized Dark
+Solarized Light
+TextMate
+Tomorrow
+Tomorrow Night
+Tomorrow Night Blue
+Tomorrow Night Bright
+Tomorrow Night Eighties
+Twilight
+Vibrant Ink
+
+*/
+
+
+	function setupEditor(){
+		window.editor = ace.edit("editor");
+		editor.setTheme("ace/theme/eclipse");
+		editor.getSession().setMode("ace/mode/html");
+		editor.setValue(`<!DOCTYPE html>
+<html>
+	<head>
+		<!--add your head files here-->
+	</head>
+	<body>
+		<!--your body html&css&js code here-->
+	</body>
+</html>`,1);
+		editor.getSession().on('change',function(){ update(); });
+		editor.focus();
+		editor.setOptions({
+			//fontFamily: "cursive",
+			fontSize: "18px",
+			showLineNumbers: true,
+			showGutter: true,
+			vScrollBarAlwaysVisible: true,
+			enableBasicAutocompletion: true,
+			enableLiveAutocompletion:true,
+		});
+		editor.setShowPrintMargin(true);
+		editor.setBehavioursEnabled(true);
+
+	}
+
+	function ready() {
+		setupEditor();
+		update();
+	}
+
+</script>
+
+</body>
+
+</html>

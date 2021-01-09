@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- uikit -->
+    <link rel="stylesheet" href="css/framework/uikit.min.css" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize/normalize.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- start navbar -->
+    <header class="main-head">
+        <div class="uk-container">
+            <nav class="main-navbar uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="index.html">musican</a>
+                </div>
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="album.html">album</a></li>
+                        <li><a href="event.html">events</a></li>
+                        <li><a href="gallery.html">gallery</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="nav-toggle">
+                            <a class="uk-navbar-toggle" uk-icon="icon:menu;ratio : .8" href="#" uk-toggle="target: #offcanvas-flip"></a>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="uk-navbar-toggle" href="#" uk-icon="icon:search;ratio : .8"></a>
+                                <div class="uk-navbar-dropdown open-search" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+
+                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <form class="uk-search uk-search-navbar uk-width-1-1">
+                                                <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                                            </form>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </nav>
+            <!-- mobile menu -->
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar">
+
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li class="uk-active">
+                            <a class="uk-navbar-item uk-margin-small-bottom" href="index.html">Musican</a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a href="album.html">Album</a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a href="event.html">Events</a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- mobile menu -->
+        </div>
+        <div class="content-overlay">
+            <div class="content uk-position-center">
+                <h1 class="typewrite" data-period="2000" data-type='[ "ARTISTS.", "ALBUMS.","EVENETS.", "LIVE SHOWS." ]'>
+                    <span class="wrap"></span>
+                </h1>
+            </div>
+        </div>
+
+    </header>
+    <!-- end navbar -->
+
+    <!-- start line up -->
+
+    <div class="line-up page-section">
+        <div class="uk-container">
+            <div class="intro uk-text-center">
+                <h1>artist lineup</h1>
+                <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some injected humour.</p>
+            </div>
+            <div class="artists">
+                <div class="uk-position-relative uk-visible-toggle uk-light slider" tabindex="-1" uk-slider="autoplay: true;autoplay-interval: 5000;pause-on-hover: false">
+
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@m">
+                        <li>
+                            <img src="images/index/artists/01.jpg" alt="">
+                            <div class="overlay">
+                                <div class="uk-position-center uk-panel">
+                                    <div class="content">
+                                        <div class="social-links">
+                                            <span uk-icon="facebook"></span>
+                                            <span uk-icon="instagram"></span>
+                                        </div>
+                                        <hr>
+                                        <div class="artist-details">
+                                            <h4>mohamed abdo</h4>
+                                            <p>band:metallica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image">
+                                <img src="images/index/artists/02.jpg" alt="">
+                            </div>
+
+                            <div class="overlay">
+                                <div class="uk-position-center uk-panel">
+                                    <div class="content">
+                                        <div class="social-links">
+                                            <span uk-icon="facebook"></span>
+                                            <span uk-icon="instagram"></span>
+                                        </div>
+                                        <hr>
+                                        <div class="artist-details">
+                                            <h4>mohamed abdo</h4>
+                                            <p>band:metallica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/index/artists/03.jpg" alt="">
+                            <div class="overlay">
+                                <div class="uk-position-center uk-panel">
+                                    <div class="content">
+                                        <div class="social-links">
+                                            <span uk-icon="facebook"></span>
+                                            <span uk-icon="instagram"></span>
+                                        </div>
+                                        <hr>
+                                        <div class="artist-details">
+                                            <h4>mohamed abdo</h4>
+                                            <p>band:metallica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/index/artists/04.jpg" alt="">
+                            <div class="overlay">
+                                <div class="uk-position-center uk-panel">
+                                    <div class="content">
+                                        <div class="social-links">
+                                            <span uk-icon="facebook"></span>
+                                            <span uk-icon="instagram"></span>
+                                        </div>
+                                        <hr>
+                                        <div class="artist-details">
+                                            <h4>mohamed abdo</h4>
+                                            <p>band:metallica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/index/artists/05.jpg" alt="">
+                            <div class="overlay">
+                                <div class="uk-position-center uk-panel">
+                                    <div class="content">
+                                        <div class="social-links">
+                                            <span uk-icon="facebook"></span>
+                                            <span uk-icon="instagram"></span>
+                                        </div>
+                                        <hr>
+                                        <div class="artist-details">
+                                            <h4>mohamed abdo</h4>
+                                            <p>band:metallica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/index/artists/06.jpg" alt="">
+                            <div class="overlay">
+                                <div class="uk-position-center uk-panel">
+                                    <div class="content">
+                                        <div class="social-links">
+                                            <span uk-icon="facebook"></span>
+                                            <span uk-icon="instagram"></span>
+                                        </div>
+                                        <hr>
+                                        <div class="artist-details">
+                                            <h4>mohamed abdo</h4>
+                                            <p>band:metallica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/index/artists/07.jpg" alt="">
+                            <div class="overlay">
+                                <div class="uk-position-center uk-panel">
+                                    <div class="content">
+                                        <div class="social-links">
+                                            <span uk-icon="facebook"></span>
+                                            <span uk-icon="instagram"></span>
+                                        </div>
+                                        <hr>
+                                        <div class="artist-details">
+                                            <h4>mohamed abdo</h4>
+                                            <p>band:metallica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/index/artists/08.jpg" alt="">
+                            <div class="overlay">
+                                <div class="uk-position-center uk-panel">
+                                    <div class="content">
+                                        <div class="social-links">
+                                            <span uk-icon="facebook"></span>
+                                            <span uk-icon="instagram"></span>
+                                        </div>
+                                        <hr>
+                                        <div class="artist-details">
+                                            <h4>mohamed abdo</h4>
+                                            <p>band:metallica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end lineup -->
+
+    <!-- start latest-release -->
+
+    <div class="latest-release page-section">
+        <div class="uk-container">
+            <div class="intro uk-text-center">
+                <h1>latest release</h1>
+            </div>
+            <div class="content">
+                <div class="uk-grid">
+                    <div class="uk-width-1-2@s uk-width-1-4@m">
+                        <div>
+                            <img src="images/index/04.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@s uk-width-1-2@m">
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <h3>ALBUM INFO</h3>
+                                <p>Most happening band Blood Chain recently has released their debut album called “HEAVEN”. Officialy the album released on May 19, 2018 in Harmonik Studio, Venice. This Alternative Rock Band made 12 songs with total 36:20
+                                    minutes timeline.</p>
+                                <p>The Lineup: Tony McAlpine (Guitars), Jhon Lennon (Vocal & Guitars), Mike Portnoy (Drums), Billy Shehan (Bass Guitars), Chester Krain (Keys).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1@s uk-width-1-4@m uk-visible@s uk-visible@m">
+                        <div>
+                            <img src="images/index/05.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end latest-relaese -->
+
+    <!-- start trending album -->
+
+    <div class="trend-album page-section">
+        <div class="uk-container">
+            <div class="intro uk-text-center">
+                <h1>TRENDING ALBUMS</h1>
+                <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some injected humour.</p>
+            </div>
+        </div>
+        <div class="albums">
+            <div class="uk-grid">
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <!-- <img src="images/index/05.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/06.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <!-- <img src="images/index/07.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/08.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <!-- <img src="images/index/08.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/08.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid">
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/09.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/06.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/07.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/08.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/06.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/07.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid">
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/09.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <!-- <img src="images/index/06.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/07.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <!-- <img src="images/index/08.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <img src="images/index/08.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-6">
+                    <div>
+                        <div class="image">
+                            <!-- <img src="images/index/08.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end trending album -->
+
+    <div class="triangle"></div>
+
+    <!-- start previous shows -->
+    <div class="prev-shows">
+        <div class="uk-container">
+            <div class="uk-grid">
+                <div class="uk-width-1-4@m uk-width-1-1@s">
+                    <div class="intro">
+                        <h1>PREVIOUS SHOWS</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available but the majority.</p>
+                    </div>
+                </div>
+                <div class="uk-width-3-4@m uk-width-1-1@s">
+                    <div class="uk-grid uk-child-width-1-1@s uk-child-width-1-3@m">
+                        <div class="image">
+                            <!-- <img src="images/index/10.jpg" alt=""> -->
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/10.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="image">
+                                <img src="images/index/12.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-grid uk-child-width-1-1@s uk-child-width-1-3@m">
+                        <div>
+                            <div class="image">
+                                <img src="images/index/11.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/14.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/13.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end previous shows -->
+
+    <!-- wall pictures -->
+
+    <div class="wall-pic page-section">
+        <div class="uk-container">
+            <div class="intro uk-text-center">
+                <h1>photo wall</h1>
+            </div>
+            <div class="uk-grid uk-grid-small uk-margin-large-top">
+                <div class="uk-width-1-4@m">
+                    <div>
+                        <div class="Iimage">
+                            <img src="images/index/pic/01.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@m">
+                        <div>
+                            <div class="image uk-margin-bottom">
+                                <img src="images/index/pic/03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/pic/04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/pic/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/pic/06.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/pic/07.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/pic/08.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/pic/09.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image">
+                                <img src="images/index/pic/10.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-4@m">
+                    <div class="Iimage">
+                        <img src="images/index/pic/02.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end wall pictures -->
+
+    <!-- upcoming shows -->
+
+    <div class="upcoming-shows page-section">
+        <div class="uk-container">
+            <div class="intro uk-text-center">
+                <h1>upcoming shows</h1>
+            </div>
+            <div class="callendar">
+                <div class="single-ticket">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="day">
+                                    <h3>15</h3>
+                                    <p>April,2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" uk-width-1-1@s uk-width-1-1@m uk-width-1-2@l">
+                            <div>
+                                <div class="place">
+                                    <h3>Dream Theatre (Live in London)</h3>
+                                    <p>23 LEE RD, BLACKHEATH, LONDON SE3 9RQ, UK</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="tickets">
+                                    <button class="uk-button uk-button-default">tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-ticket">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="day">
+                                    <h3>25</h3>
+                                    <p>may,2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" uk-width-1-1@s uk-width-1-1@m uk-width-1-2@l">
+                            <div>
+                                <div class="place">
+                                    <h3>Adele (Live in Paris)</h3>
+                                    <p>23 LEE RD, BLACKHEATH, PARIS SE3 9RQ, FR</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="tickets">
+                                    <button class="uk-button uk-button-default">tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-ticket">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="day">
+                                    <h3>10</h3>
+                                    <p>jul,2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" uk-width-1-1@s uk-width-1-1@m uk-width-1-2@l">
+                            <div>
+                                <div class="place">
+                                    <h3>Maroon 5 (Live in Barcelona)</h3>
+                                    <p>23 LEE RD, BLACKHEATH, Barcelona SE3 9RQ, SP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="tickets">
+                                    <button class="uk-button uk-button-default">tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-ticket">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="day">
+                                    <h3>17</h3>
+                                    <p>aug,2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" uk-width-1-1@s uk-width-1-1@m uk-width-1-2@l">
+                            <div>
+                                <div class="place">
+                                    <h3>nirvana (Live in roma)</h3>
+                                    <p>23 LEE RD, BLACKHEATH, ROMA SE3 9RQ, IT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="tickets">
+                                    <button class="uk-button uk-button-default">tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-ticket">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="day">
+                                    <h3>30</h3>
+                                    <p>december,2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" uk-width-1-1@s uk-width-1-1@m uk-width-1-2@l">
+                            <div>
+                                <div class="place">
+                                    <h3>ed sheeran (Live in new york)</h3>
+                                    <p>23 LEE RD, BLACKHEATH, new york SE3 9RQ, US</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1@s uk-width-1-1@m uk-width-1-4@l">
+                            <div>
+                                <div class="tickets">
+                                    <button class="uk-button uk-button-default">tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end upcoming shows -->
+
+    <script src="js/framework/uikit.min.js"></script>
+    <script src="js/framework/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/blugins/jQuery-backgroundMove-js/jquery.backgroundMove.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

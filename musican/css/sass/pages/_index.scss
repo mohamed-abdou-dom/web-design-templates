@@ -1,0 +1,338 @@
+.main-head {
+    position: relative;
+    background-image: url('../images/mainbg.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .content-overlay {
+        @include overlay();
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(61, 0, 95, 0.8) 25%, rgba(0, 0, 0, 0.8) 100%);
+        background-size: 600% 600%;
+        -webkit-animation: AnimationName 20s ease-in-out infinite;
+        -moz-animation: AnimationName 20s ease-in-out infinite;
+        -o-animation: AnimationName 20s ease-in-out infinite;
+        animation: AnimationName 20s ease-in-out infinite;
+        h1,
+        a,
+        span {
+            color: #fff;
+            text-decoration: none;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            font-weight: 900;
+        }
+    }
+}
+
+.line-up {
+    background-color: #111111;
+    .intro {
+        margin-bottom: 50px;
+        h1 {
+            color: #f60038;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        p {
+            color: #494848;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: none;
+            width: 50%;
+            margin: auto;
+            line-height: 1.6;
+        }
+    }
+    .artists {
+        .slider {
+            li {
+                overflow: hidden;
+                img {
+                    transition: 1s all ease-in-out;
+                    width: 100%;
+                }
+                .overlay {
+                    @include overlay();
+                    background-color: rgba($color: #14015e, $alpha: 0.7);
+                    .content {
+                        margin-top: 70%;
+                        span {
+                            color: #fff;
+                        }
+                        h4 {
+                            font-weight: 700;
+                            text-transform: capitalize;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        p {
+                            font-weight: 500;
+                            text-transform: capitalize;
+                            margin: 0;
+                            padding: 0;
+                            color: #fff;
+                        }
+                    }
+                    display: none;
+                }
+                &:hover {
+                    .overlay {
+                        cursor: grab;
+                        display: block;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        -moz-transform: scale(1.3) rotate(3deg);
+                        -webkit-transform: scale(1.3) rotate(3deg);
+                        -o-transform: scale(1.3) rotate(3deg);
+                        -ms-transform: scale(1.3) rotate(3deg);
+                        transform: scale(1.3) rotate(3deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.latest-release {
+    background-image: url('../images/index/01.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    .intro {
+        margin-bottom: 100px;
+        h1 {
+            color: #f60038;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    .content {
+        .uk-card {
+            padding: 0;
+            width: 100%;
+            background-color: transparent;
+            h3 {
+                color: #fff;
+                font-size: 17px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+.trend-album {
+    .intro {
+        h1 {
+            color: #f60038;
+            font-size: 40px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        p {
+            color: #494848;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: none;
+            width: 50%;
+            margin: auto;
+            line-height: 1.6;
+        }
+    }
+    .albums {
+        margin-top: 50px;
+        overflow: hidden;
+        .uk-grid {
+            padding: 0;
+            margin: 0;
+            -webkit-transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+            -moz-transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+            -ms-transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+            -o-transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+            transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+        }
+        .image {
+            width: 200px;
+            height: 200px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            transition: 0.5s all ease-in-out;
+            &:hover {
+                -moz-transform: scale(1.7);
+                -webkit-transform: scale(1.7);
+                -o-transform: scale(1.7);
+                -ms-transform: scale(1.7);
+                transform: scale(1.7);
+            }
+        }
+    }
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 140px 0 140px 300px;
+    border-color: transparent transparent transparent #072902;
+}
+
+.prev-shows {
+    margin-bottom: 50px;
+    .intro {
+        width: 100%;
+        h1 {
+            color: #f60038;
+            font-size: 25px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        p {
+            color: #494848;
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: none;
+            // width: 50%;
+            margin: auto;
+            line-height: 1.6;
+        }
+    }
+    img {
+        width: 100%;
+        transition: 1s all ease-in-out;
+    }
+    .image {
+        position: relative;
+        overflow: hidden;
+        .overlay {
+            @include overlay();
+            background-color: rgba($color: #000000, $alpha: 0.7);
+            display: none;
+        }
+        &:hover {
+            .overlay {
+                cursor: grab;
+                display: block;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                -moz-transform: scale(1.2) rotate(10deg);
+                -webkit-transform: scale(1.2) rotate(10deg);
+                -o-transform: scale(1.2) rotate(10deg);
+                -ms-transform: scale(1.2) rotate(10deg);
+                transform: scale(1.2) rotate(10deg);
+            }
+        }
+    }
+}
+
+.wall-pic {
+    background-color: #EE762B;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23ca6c41' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+    .intro {
+        h1 {
+            color: #d0c0c0;
+            font-size: 40px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+        }
+    }
+    .Iimage {
+        img {
+            width: 100%;
+        }
+        border: 25px double #e2c9c9;
+    }
+}
+
+.upcoming-shows {
+    .intro {
+        h1 {
+            color: #f60038;
+            font-size: 40px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        margin-bottom: 50px;
+    }
+    .callendar {
+        .single-ticket {
+            margin-bottom: 30px;
+            padding: 30px 40px;
+            border: 5px inset transparent;
+            transition: 1s all ease;
+            .day {
+                border-right: 1px solid #dad3c9;
+                h3 {
+                    color: #000000;
+                    font-size: 30px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                    transition: 1s all ease;
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                    color: #000000;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+            .place {
+                h3 {
+                    margin-bottom: 22px;
+                    color: #000000;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    transition: 1s all ease;
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                    color: #000000;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+            .tickets {
+                button {
+                    padding: 10px 41px;
+                    border-radius: 7px;
+                    border: 3px solid aquamarine;
+                    transition: 1s all ease;
+                    float: right;
+                    &:hover {
+                        border: 3px solid #f60038;
+                    }
+                }
+            }
+            &:hover {
+                border: 5px inset #f60038;
+                h3 {
+                    color: #f60038;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+nav {
+    padding: 10px 10px;
+    li {
+        padding: 0 5px;
+        a {
+            @include font(50px, 500, 1.2, $lightColor);
+            font-size: 13px !important;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+}

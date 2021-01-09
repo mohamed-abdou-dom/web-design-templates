@@ -1,0 +1,67 @@
+.main-navbar {
+    height: 80px;
+    z-index: 1;
+    border-bottom: 1px solid red;
+    .uk-navbar-left {
+        .uk-logo {
+            padding: 0;
+            text-transform: capitalize;
+            color: #F60038;
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+    .uk-navbar-center {
+        li {
+            position: relative;
+            a {
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+            a::before {
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                content: '';
+                display: block;
+                width: 0%;
+                height: 5px;
+                border-radius: 10px;
+                background: #F60038;
+                -moz-transition: all 0.4s ease;
+                -o-transition: all 0.4s ease;
+                -webkit-transition: all 0.4s ease;
+                -ms-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+            }
+            &:hover a::before {
+                display: block;
+                width: 100%;
+            }
+        }
+        @include maxWidth(1000px) {
+            display: none;
+        }
+    }
+    .uk-navbar-right {
+        li {
+            .uk-icon-link,
+            .uk-navbar-toggle {
+                color: #fff;
+            }
+            .open-search {
+                padding: 0;
+                padding: 15px 10px;
+                border-radius: 4px;
+            }
+        }
+        .nav-toggle {
+            @include minWidth(1000px) {
+                display: none;
+            }
+        }
+    }
+}

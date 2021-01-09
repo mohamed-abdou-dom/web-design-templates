@@ -1,0 +1,329 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* start my framework */
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+hr.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: #f4623a;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+.btn {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.btn-xl {
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+}
+
+.page-section {
+    padding: 8rem 0;
+}
+
+
+/* end my framework */
+
+/* start navbar */
+
+#mainNav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+#mainNav .navbar-brand {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #212529;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: #6c757d;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.75rem 0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active {
+    color: #f4623a;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #f4623a !important;
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    #mainNav .navbar-brand:hover {
+        color: #fff;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        padding: 0 1rem;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link:hover {
+        color: #fff;
+    }
+
+    #mainNav .navbar-nav .nav-item:last-child .nav-link {
+        padding-right: 0;
+    }
+
+    #mainNav.navbar-scrolled {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+    }
+
+    #mainNav.navbar-scrolled .navbar-brand {
+        color: #212529;
+    }
+
+    #mainNav.navbar-scrolled .navbar-brand:hover {
+        color: #f4623a;
+    }
+
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+        color: #212529;
+    }
+
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+        color: #f4623a;
+    }
+}
+
+/* end navbar */
+
+/* start master head */
+
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header.masthead h1 {
+    font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        height: 100vh;
+        min-height: 40rem;
+        padding-top: 72px;
+        padding-bottom: 0;
+    }
+
+    header.masthead p {
+        font-size: 1.15rem;
+    }
+
+    header.masthead h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header.masthead h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* end master head */
+
+/* start services */
+
+.our-services:hover {
+    border: 1px solid blanchedalmond;
+    box-shadow: 1px 2px 4px 4px aliceblue;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: azure;
+
+}
+
+/* end services */
+
+
+/* start outeam */
+
+#ourteam video {
+    border: 3px solid bisque;
+}
+
+/* end ourteam */
+
+/* Start Portfolio */
+#portfolio .container-fluid {
+    max-width: 1920px;
+}
+
+#portfolio .container-fluid .portfolio-box {
+    position: relative;
+    display: block;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(244, 98, 58, 0.9);
+    transition: opacity 0.25s ease;
+    text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+    font-size: 1.2rem;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+/* End Portfolio */
+
+/* Callender Section */
+
+.callender {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.callender .callender-inner {
+    position: relative;
+    padding: 3rem;
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.callender .callender-inner:before {
+    border-radius: 0.5rem;
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    border: 0.25rem solid rgba(255, 255, 255, 0.85);
+}
+
+.callender .section-heading-upper{
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.callender .section-heading-lower{
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+
+}
+.list-hours {
+    font-size: 0.9rem;
+}
+
+.list-hours .list-hours-item {
+    border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+    padding-bottom: .25rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.list-hours .list-hours-item.today {
+    font-weight: bold;
+    color: #e6a756;
+}
+
+@media (min-width: 992px) {
+    .list-hours {
+        width: 50%;
+        font-size: 1.1rem;
+    }
+}
+
+.address strong {
+    font-size: 1.2rem;
+}
+
+/* End Callender Section */
+
+
+
+
+.Loginform{
+    background-color: transparent;
+    max-width: 450px;
+    margin: 98px auto;
+}
+
+.Loginform label,
+.Signupform label {
+    color: ghostwhite;
+}
+
+.Loginform input,
+.Signupform input {
+    background-color: #6D6158;
+    border: 1px solid cadetblue;
+    border-radius: 1px;
+}
+
+.Loginform small,
+.Signupform small {
+    color: bisque !important;
+}
+
+
+.Signupform {
+    background-color: transparent;
+    max-width: 450px;
+    margin: 25px auto;
+}

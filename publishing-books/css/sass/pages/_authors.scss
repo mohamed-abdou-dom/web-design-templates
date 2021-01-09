@@ -1,0 +1,60 @@
+.authors {
+    .uk-card {
+        max-width: 400px;
+        .uk-card-media-top {
+            .image {
+                position: relative;
+                width: 100%;
+                height: 270px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .overlay {
+                    @include overlay();
+                    ul {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 70px;
+                        transition: .5s all ease-in-out;
+                        a {
+                            color: #ffffff;
+                            background-color: #95ADBE;
+                            height: 30px;
+                            width: 30px;
+                            line-height: 30px;
+                            border: 1px solid #95ADBE;
+                            text-align: center;
+                            border-radius: 50%;
+                            transition: .5s all ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+        .uk-card-body {
+            h3 {
+                @include font(30px, 500, 1.2, $headColor, 'capitalize');
+                text-transform: capitalize;
+                transition: 0.5s all ease-in-out;
+            }
+            p {
+                @include font(15px, 300, 1.6, $paraColor, 'none');
+            }
+        }
+        &:hover {
+            .uk-card-media-top {
+                .image {
+                    ul {
+                        bottom: 40px;
+                    }
+                }
+            }
+            .uk-card-body {
+                h3 {
+                    color: deepskyblue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,345 @@
+.main-head {
+    .intro {
+        position: relative;
+        background-image: url('../images/mainbg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        .overlay {
+            @include overlay();
+            // background-color: rgba($color: #000000, $alpha: 0.8);
+            .content {
+                margin-top: 150px;
+                h2 {
+                    @include font($headFont,
+                    500,
+                    1.2,
+                    $headColor,
+                    "capitalize");
+                }
+                p {
+                    @include font($paraFont,
+                    500,
+                    1.2,
+                    $paraColor,
+                    "capitalize");
+                }
+                button {
+                    border-radius: 5px;
+                    background-color: #95adbe;
+                    font-size: 15px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                }
+                .uk-button-secondary {
+                    background-color: #ffffff;
+                    color: $headColor;
+                }
+            }
+        }
+    }
+}
+
+.types {
+    .card-group {
+        position: relative;
+        bottom: 120px;
+        .uk-card {
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+            .image {
+                border: 1px solid #f5f4f0;
+                height: 120px;
+                width: 120px;
+                line-height: 120px;
+                border-radius: 50%;
+                padding: 16px;
+                margin: auto;
+                background: #f5f4f0;
+                transition: .5s all ease-in-out;
+                &:hover {
+                    background-color: #bbb8aa;
+                    border: 1px solid #bbb8aa;
+                }
+            }
+            h3 {
+                @include font(22px,
+                500,
+                1,
+                $darkColor,
+                'capitalize');
+            }
+            p {
+                @include font(15px,
+                500,
+                1.6,
+                $paraColor,
+                'capitalize');
+            }
+        }
+    }
+}
+
+.stats {
+    .part {
+        h3 {
+            @include font(50px,
+            300,
+            1,
+            $darkColor,
+            'capitalize');
+        }
+        span {
+            @include font(13px,
+            300,
+            1.6,
+            $paraColor,
+            'capitalize');
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.breif {
+    .image {
+        height: 600px;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content {
+        padding-top: 40px;
+        padding-left: 20px;
+        h6 {
+            @include font(14px,
+            600,
+            1.2,
+            $headsColor,
+            'uppercase');
+            letter-spacing: 3px;
+        }
+        h1 {
+            @include font($headFont,
+            500,
+            1.2,
+            $headColor,
+            'uppercase');
+        }
+        p {
+            @include font($paraFont,
+            500,
+            1.9,
+            $paraColor,
+            'capitalize');
+        }
+        button {
+            background-color: #95adbe;
+            color: #ffffff;
+            font-weight: 500;
+            letter-spacing: 2px;
+            border-radius: 7px;
+            border: 1px solid #95adbe;
+        }
+    }
+}
+
+.new-release {
+    .intro {
+        h6 {
+            @include font(15px,
+            500,
+            1.2,
+            $headsColor,
+            'uppercase');
+            text-transform: uppercase !important;
+        }
+        h1 {
+            @include font($headFont,
+            500,
+            1.2,
+            $headColor,
+            'capitalize');
+            text-transform: capitalize !important;
+            margin: 0;
+            margin-bottom: 80px;
+        }
+    }
+    .uk-card {
+        height: 350px;
+        height: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        .uk-card-media-left {
+            .overlay {
+                @include overlay();
+                .uk-iconnav {
+                    float: right;
+                    a {
+                        position: relative;
+                        color: #000000;
+                        background-color: #ffffff;
+                        top: 5px;
+                        right: 5px;
+                        height: 50px;
+                        width: 50px;
+                        line-height: 50px;
+                        border: 1px solid #fff;
+                        text-align: center;
+                        border-radius: 50%;
+                        transition: .5s all ease-in-out;
+                        &:hover {
+                            color: #ffffff;
+                            background-color: red;
+                            border-color: red;
+                        }
+                    }
+                }
+                display: none;
+            }
+        }
+        .uk-card-body {
+            padding: 20px 10px;
+            h6 {
+                @include font(18px,
+                600,
+                1.2,
+                $headsColor,
+                'capitalize');
+            }
+            h5 {
+                @include font(28px,
+                500,
+                1.2,
+                $headColor,
+                'capitalize');
+                transition: 1s all ease-in-out;
+            }
+            span {
+                @include font(18px,
+                300,
+                1.2,
+                $paraColor,
+                'capitalize');
+            }
+        }
+        &:hover {
+            background-color: #506675;
+            h6,
+            h5,
+            span {
+                color: #ffffff;
+            }
+            .overlay {
+                display: block;
+            }
+        }
+    }
+}
+
+.testmonials {
+    .image {
+        position: relative;
+        background-image: url('../images/index/testimonials.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 70vh;
+        .overlay {
+            @include overlay();
+            background-color: rgba($color: #bad1e0, $alpha: 0.6);
+        }
+    }
+    .uk-slider {
+        position: relative;
+        bottom: 85px;
+        .uk-card {
+            width: 90%;
+            margin: auto;
+            &:hover {
+                cursor: grab;
+            }
+        }
+    }
+}
+
+.recent-blog {
+    .intro {
+        h6 {
+            @include font(15px,
+            500,
+            1.2,
+            $headsColor,
+            'uppercase');
+            text-transform: uppercase !important;
+        }
+        h1 {
+            @include font($headFont,
+            500,
+            1.2,
+            $headColor,
+            'capitalize');
+            text-transform: capitalize !important;
+            margin: 0;
+            margin-bottom: 80px;
+        }
+    }
+    .uk-card {
+        border: none;
+        box-shadow: none;
+        img {
+            width: 100%;
+        }
+        .uk-card-body {
+            position: relative;
+            bottom: 110px;
+            .cal {
+                span {
+                    display: block;
+                    width: 93px;
+                    height: 93px;
+                    border: 1px solid #f5f4f0;
+                    border-radius: 50%;
+                    margin: auto;
+                    font-size: 28px;
+                    line-height: 100%;
+                    padding: 20px;
+                    background: #f5f4f0;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    transition: .6s all ease-in-out;
+                }
+            }
+            h3 {
+                @include font(25px,
+                600,
+                1.2,
+                $headColor,
+                'capitalize');
+                transition: .6s all ease-in-out;
+            }
+            p {
+                @include font($paraFont,
+                500,
+                1.8,
+                $paraColor,
+                'none');
+            }
+        }
+        &:hover {
+            h3 {
+                color: #95ADBE;
+            }
+            span {
+                color: white;
+                background: #ad8383 !important;
+                border-color: #ad8383 !important;
+            }
+        }
+    }
+}

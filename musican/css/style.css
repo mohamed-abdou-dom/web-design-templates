@@ -1,0 +1,833 @@
+.page-section {
+  padding: 80px 0;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.main-navbar {
+  height: 80px;
+  z-index: 1;
+  border-bottom: 1px solid red;
+}
+.main-navbar .uk-navbar-left .uk-logo {
+  padding: 0;
+  text-transform: capitalize;
+  color: #F60038;
+  font-size: 25px;
+  font-weight: 600;
+}
+.main-navbar .uk-navbar-center li {
+  position: relative;
+}
+.main-navbar .uk-navbar-center li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.main-navbar .uk-navbar-center li a::before {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 5px;
+  border-radius: 10px;
+  background: #F60038;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.main-navbar .uk-navbar-center li:hover a::before {
+  display: block;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .main-navbar .uk-navbar-center {
+    display: none;
+  }
+}
+.main-navbar .uk-navbar-right li .uk-icon-link,
+.main-navbar .uk-navbar-right li .uk-navbar-toggle {
+  color: #fff;
+}
+.main-navbar .uk-navbar-right li .open-search {
+  padding: 0;
+  padding: 15px 10px;
+  border-radius: 4px;
+}
+@media (min-width: 1000px) {
+  .main-navbar .uk-navbar-right .nav-toggle {
+    display: none;
+  }
+}
+
+.main-head {
+  position: relative;
+  background-image: url("../images/mainbg.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.main-head .content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(61, 0, 95, 0.8) 25%, rgba(0, 0, 0, 0.8) 100%);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 20s ease-in-out infinite;
+  -moz-animation: AnimationName 20s ease-in-out infinite;
+  -o-animation: AnimationName 20s ease-in-out infinite;
+  animation: AnimationName 20s ease-in-out infinite;
+}
+.main-head .content-overlay h1,
+.main-head .content-overlay a,
+.main-head .content-overlay span {
+  color: #fff;
+  text-decoration: none;
+}
+.main-head .content-overlay h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.line-up {
+  background-color: #111111;
+}
+.line-up .intro {
+  margin-bottom: 50px;
+}
+.line-up .intro h1 {
+  color: #f60038;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.line-up .intro p {
+  color: #494848;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: none;
+  width: 50%;
+  margin: auto;
+  line-height: 1.6;
+}
+.line-up .artists .slider li {
+  overflow: hidden;
+}
+.line-up .artists .slider li img {
+  transition: 1s all ease-in-out;
+  width: 100%;
+}
+.line-up .artists .slider li .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20, 1, 94, 0.7);
+  display: none;
+}
+.line-up .artists .slider li .overlay .content {
+  margin-top: 70%;
+}
+.line-up .artists .slider li .overlay .content span {
+  color: #fff;
+}
+.line-up .artists .slider li .overlay .content h4 {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+.line-up .artists .slider li .overlay .content p {
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.line-up .artists .slider li:hover .overlay {
+  cursor: grab;
+  display: block;
+}
+.line-up .artists .slider li:hover img {
+  width: 100%;
+  height: 100%;
+  -moz-transform: scale(1.3) rotate(3deg);
+  -webkit-transform: scale(1.3) rotate(3deg);
+  -o-transform: scale(1.3) rotate(3deg);
+  -ms-transform: scale(1.3) rotate(3deg);
+  transform: scale(1.3) rotate(3deg);
+}
+
+.latest-release {
+  background-image: url("../images/index/01.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.latest-release .intro {
+  margin-bottom: 100px;
+}
+.latest-release .intro h1 {
+  color: #f60038;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.latest-release .content .uk-card {
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+}
+.latest-release .content .uk-card h3 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.latest-release .content .uk-card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.trend-album .intro h1 {
+  color: #f60038;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.trend-album .intro p {
+  color: #494848;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: none;
+  width: 50%;
+  margin: auto;
+  line-height: 1.6;
+}
+.trend-album .albums {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.trend-album .albums .uk-grid {
+  padding: 0;
+  margin: 0;
+  -webkit-transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+  -moz-transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+  -ms-transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+  -o-transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+  transform: rotateX(54deg) rotateY(-2deg) rotateZ(9deg) scale(1.1);
+}
+.trend-album .albums .image {
+  width: 200px;
+  height: 200px;
+  transition: 0.5s all ease-in-out;
+}
+.trend-album .albums .image img {
+  width: 100%;
+  height: 100%;
+}
+.trend-album .albums .image:hover {
+  -moz-transform: scale(1.7);
+  -webkit-transform: scale(1.7);
+  -o-transform: scale(1.7);
+  -ms-transform: scale(1.7);
+  transform: scale(1.7);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 140px 0 140px 300px;
+  border-color: transparent transparent transparent #072902;
+}
+
+.prev-shows {
+  margin-bottom: 50px;
+}
+.prev-shows .intro {
+  width: 100%;
+}
+.prev-shows .intro h1 {
+  color: #f60038;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.prev-shows .intro p {
+  color: #494848;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none;
+  margin: auto;
+  line-height: 1.6;
+}
+.prev-shows img {
+  width: 100%;
+  transition: 1s all ease-in-out;
+}
+.prev-shows .image {
+  position: relative;
+  overflow: hidden;
+}
+.prev-shows .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.prev-shows .image:hover .overlay {
+  cursor: grab;
+  display: block;
+}
+.prev-shows .image:hover img {
+  width: 100%;
+  height: 100%;
+  -moz-transform: scale(1.2) rotate(10deg);
+  -webkit-transform: scale(1.2) rotate(10deg);
+  -o-transform: scale(1.2) rotate(10deg);
+  -ms-transform: scale(1.2) rotate(10deg);
+  transform: scale(1.2) rotate(10deg);
+}
+
+.wall-pic {
+  background-color: #EE762B;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23ca6c41' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+.wall-pic .intro h1 {
+  color: #d0c0c0;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+.wall-pic .Iimage {
+  border: 25px double #e2c9c9;
+}
+.wall-pic .Iimage img {
+  width: 100%;
+}
+
+.upcoming-shows .intro {
+  margin-bottom: 50px;
+}
+.upcoming-shows .intro h1 {
+  color: #f60038;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.upcoming-shows .callendar .single-ticket {
+  margin-bottom: 30px;
+  padding: 30px 40px;
+  border: 5px inset transparent;
+  transition: 1s all ease;
+}
+.upcoming-shows .callendar .single-ticket .day {
+  border-right: 1px solid #dad3c9;
+}
+.upcoming-shows .callendar .single-ticket .day h3 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: 1s all ease;
+}
+.upcoming-shows .callendar .single-ticket .day p {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.upcoming-shows .callendar .single-ticket .place h3 {
+  margin-bottom: 22px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 1s all ease;
+}
+.upcoming-shows .callendar .single-ticket .place p {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.upcoming-shows .callendar .single-ticket .tickets button {
+  padding: 10px 41px;
+  border-radius: 7px;
+  border: 3px solid aquamarine;
+  transition: 1s all ease;
+  float: right;
+}
+.upcoming-shows .callendar .single-ticket .tickets button:hover {
+  border: 3px solid #f60038;
+}
+.upcoming-shows .callendar .single-ticket:hover {
+  border: 5px inset #f60038;
+}
+.upcoming-shows .callendar .single-ticket:hover h3 {
+  color: #f60038;
+}
+
+.album-head {
+  position: relative;
+  background-image: url("../images/album/01.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.album-head .content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(85, 45, 72, 0.8);
+}
+.album-head .content-overlay .content h2 {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.album {
+  width: 75%;
+  margin: auto;
+}
+.album .uk-subnav li {
+  margin-right: 15px;
+}
+.album .uk-subnav li a {
+  color: #000000;
+  line-height: 28px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px dashed #f5eded;
+}
+.album .uk-subnav .uk-active a {
+  background-color: #f5eded;
+  border: 1px dashed #f5eded;
+}
+.album .filter li {
+  height: 300px;
+}
+.album .filter li .image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.album .filter li .image img {
+  height: 100%;
+  width: 100%;
+}
+.album .filter li .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.album .filter li .image .overlay .content h2 {
+  position: relative;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.album .filter li .image .overlay .content h2::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 3px;
+  bottom: -10px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+}
+.album .filter li .image .overlay .content h4 {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.album .filter li .image:hover .overlay {
+  display: block;
+}
+
+.new-video {
+  position: relative;
+  background-image: url("../images/album/11.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.new-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(42, 27, 94, 0.7);
+}
+.new-video .overlay .content {
+  text-align: center;
+  position: relative;
+}
+.new-video .overlay .content .play-video span {
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+}
+.new-video .overlay .content .play-video:hover span {
+  background-color: #E43A90;
+}
+.new-video .overlay .content h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.new-video .overlay .content p {
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  letter-spacing: 2px;
+  width: 50%;
+  margin: auto;
+}
+
+.feature-albums .intro h1 {
+  color: #f60038;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.feature-albums .intro p {
+  color: #494848;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: none;
+  width: 50%;
+  margin: auto;
+  line-height: 1.6;
+}
+.feature-albums .album-container .content .image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.feature-albums .album-container .content .image img {
+  width: 100%;
+  height: 100%;
+}
+.feature-albums .album-container .content .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+.feature-albums .album-container .content .image .overlay .content h2,
+.feature-albums .album-container .content .image .overlay .content h5 {
+  color: #fff;
+  font-weight: 700;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 90%;
+  text-transform: capitalize;
+}
+.feature-albums .album-container .content .image:hover .overlay {
+  display: block;
+}
+
+.event-head {
+  position: relative;
+  background-image: url("../images/event/01.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.event-head .content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(85, 45, 72, 0.8);
+}
+.event-head .content-overlay .content .uk-countdown-number {
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  line-height: 93px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+.event-head .content-overlay .content h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.event-head .content-overlay .content p {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.event-shows .activites {
+  position: relative;
+}
+.event-shows .activites .slider li {
+  height: 300px;
+}
+.event-shows .activites .slider li .image {
+  width: 100%;
+  height: 100%;
+}
+.event-shows .activites .slider li .image img {
+  width: 100%;
+  height: 100%;
+}
+.event-shows .activites .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 33.4%;
+  height: 100%;
+}
+.event-shows .activites .overlay h1 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.8;
+  font-size: 30px;
+}
+@media (max-width: 800px) {
+  .event-shows .activites .overlay h1 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-size: 20px;
+  }
+}
+
+.news-letter {
+  background-color: #E8E8E8;
+}
+.news-letter .content h2 {
+  color: #494848;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: capitalize;
+}
+.news-letter .content p {
+  color: #494848;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.news-letter .form input {
+  height: 78px;
+  width: 400px;
+}
+.news-letter .form button {
+  height: 78px;
+  background-color: #f3ebeb;
+  border: 1px solid #f3ebeb;
+}
+
+.gallery-head {
+  position: relative;
+  background-image: url("../images/gallery/01.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.gallery-head .content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(85, 45, 72, 0.8);
+}
+.gallery-head .content-overlay .content h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.gallery .uk-subnav li {
+  margin-right: 15px;
+}
+.gallery .uk-subnav li a {
+  color: #000000;
+  line-height: 28px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px dashed #f5eded;
+}
+.gallery .uk-subnav .uk-active a {
+  background-color: #f5eded;
+  border: 1px dashed #f5eded;
+}
+.gallery .filter li {
+  height: 200px;
+}
+.gallery .filter li .image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.gallery .filter li .image img {
+  height: 100%;
+  width: 100%;
+}
+.gallery .filter li .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.gallery .filter li .image .overlay .content h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.gallery .filter li .image:hover .overlay {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

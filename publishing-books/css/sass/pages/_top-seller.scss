@@ -1,0 +1,91 @@
+.top-seller {
+    .products {
+        .uk-card {
+            .uk-card-media-top {
+                img {
+                    width: 100%;
+                }
+                .overlay {
+                    @include overlay();
+                    .uk-iconnav {
+                        float: right;
+                        a {
+                            position: relative;
+                            color: #000000;
+                            background-color: #ffffff;
+                            top: 5px;
+                            right: 5px;
+                            height: 50px;
+                            width: 50px;
+                            line-height: 50px;
+                            border: 1px solid #fff;
+                            text-align: center;
+                            border-radius: 50%;
+                            transition: .5s all ease-in-out;
+                            &:hover {
+                                color: #ffffff;
+                                background-color: red;
+                                border-color: red;
+                            }
+                        }
+                    }
+                    display: none;
+                }
+            }
+            .uk-card-body {
+                padding: 20px 10px;
+                h3 {
+                    @include font(28px, 500, 1.2, $headColor, 'capitalize');
+                    transition: 1s all ease-in-out;
+                }
+                p {
+                    @include font(18px, 300, 1.2, $paraColor, 'capitalize');
+                }
+            }
+            &:hover {
+                background-color: #506675;
+                h3,
+                p {
+                    color: #ffffff;
+                }
+                .overlay {
+                    display: block;
+                }
+            }
+        }
+    }
+    .right {
+        .search {
+            form {
+                width: 100%;
+                input {
+                    border-radius: 5px;
+                    padding: 25px 10px;
+                }
+            }
+        }
+        h2 {
+            @include font(35px, 500, 1.2, $headColor, 'uppercase');
+            text-transform: uppercase !important;
+        }
+        ul {
+            li {
+                a {
+                    @include font(20px, 500, 1.2, $headColor, 'capitalize');
+                    text-transform: capitalize !important;
+                    text-decoration: none;
+                    transition: .5s all ease-in-out;
+                }
+                span {
+                    float: right;
+                }
+                &:hover {
+                    cursor: pointer;
+                    a {
+                        color: deepskyblue;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.main-navbar {
+    .navbar-brand {
+        @include font($primaryFont, 800, 1.2, $primaryColor);
+    }
+    .navbar-nav {
+        margin-left: 60px;
+        .nav-item {
+            padding: 0 15px;
+            .nav-link {
+                @include font(14px, 100, 1.2, $primaryColor);
+                text-transform: uppercase;
+                .search-icon {
+                    margin-right: 39px;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: #9e7272;
+                }
+                &:hover {
+                    color: $secondryColor;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+.page-section {
+  padding: 50px 0;
+}
+
+nav {
+  padding: 10px 10px;
+}
+nav li {
+  padding: 0 5px;
+}
+nav li a {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffffff !important;
+  font-size: 13px !important;
+}
+nav li a:hover {
+  color: #4859fc !important;
+}
+
+body {
+  height: 4000px;
+}
+
+.main-head {
+  background-image: url("../images/mainbg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.main-head .content h1 {
+  font-size: 60px !important;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff !important;
+}
+.main-head .content p {
+  font-size: 20px !important;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #cacaca !important;
+}
+.main-head .content button {
+  border-radius: 26px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.skills .intro h1 {
+  font-size: 46px !important;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #303132 !important;
+}
+.skills .intro p {
+  font-size: 20px !important;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #757575 !important;
+}
+.skills .cards h6 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #303132 !important;
+  text-transform: uppercase;
+}
+.skills .cards p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #cacaca !important;
+}
+
+.dark-new-products {
+  background-color: black;
+}
+.dark-new-products .uk-card {
+  padding: 80px 0;
+  box-shadow: none;
+  background-color: black;
+}
+.dark-new-products .uk-card img {
+  width: 100%;
+}
+.dark-new-products .uk-card h3 {
+  font-size: 46px !important;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff !important;
+  text-transform: capitalize;
+}
+.dark-new-products .uk-card p {
+  font-size: 20px !important;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #ffffff !important;
+  text-transform: capitalize;
+}
+.dark-new-products .uk-card button {
+  border-radius: 26px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.light-new-products {
+  background-color: white;
+}
+.light-new-products .uk-card {
+  padding: 80px 0;
+  box-shadow: none;
+  background-color: white;
+}
+.light-new-products .uk-card img {
+  width: 100%;
+}
+.light-new-products .uk-card h3 {
+  font-size: 46px !important;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #303132 !important;
+  text-transform: capitalize;
+}
+.light-new-products .uk-card p {
+  font-size: 20px !important;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #757575 !important;
+  text-transform: capitalize;
+}
+.light-new-products .uk-card button {
+  border-radius: 26px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.slider .op {
+  width: 450px;
+}
+.slider .op img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

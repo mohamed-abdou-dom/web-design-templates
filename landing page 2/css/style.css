@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.page-section {
+  padding: 60px 0;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+hr {
+  background-color: #222222;
+}
+
+.special-head {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: capitalize;
+}
+
+.secondry-head {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #5f6263;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.special-para {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #5f6263;
+  text-transform: none;
+  font-style: italic;
+}
+
+.main-navbar .navbar-brand {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #222222;
+}
+.main-navbar .navbar-nav {
+  margin-left: 60px;
+}
+.main-navbar .navbar-nav .nav-item {
+  padding: 0 15px;
+}
+.main-navbar .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: uppercase;
+}
+.main-navbar .navbar-nav .nav-item .nav-link .search-icon {
+  margin-right: 39px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #9e7272;
+}
+.main-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #E4C083;
+}
+
+.main-header {
+  background-image: url("../images/index/01.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.search-sec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  display: none;
+}
+.search-sec .close span {
+  font-size: 50px;
+  position: absolute;
+  top: 45px;
+  cursor: pointer;
+}
+.search-sec .content {
+  margin-top: 50vh;
+}
+.search-sec .content input {
+  border: none;
+  font-size: 50px;
+  background-color: unset;
+}
+
+.skills {
+  width: 100%;
+}
+.skills .all .content {
+  text-align: center;
+  padding: 70px 0;
+  background-color: cornsilk;
+  transition: 0.7s all ease;
+  width: 100%;
+  text-transform: capitalize;
+}
+.skills .all .content span {
+  font-size: 4.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #5f6263;
+}
+.skills .all .content h6 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #5f6263;
+  margin-top: 20px;
+}
+.skills .all .content:hover {
+  padding: 0;
+}
+.skills .all .content:nth-child(1),
+.skills .all .content:nth-child(3) {
+  background-color: #F2F5F8;
+}
+.skills .all .content:nth-child(2),
+.skills .all .content:nth-child(4) {
+  background-color: #EDF0F2;
+}
+
+.apps .card {
+  border: none;
+  margin-bottom: 15px;
+}
+.apps .card h5 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: uppercase;
+}
+.apps .card p {
+  font-size: 0.8rem;
+  font-weight: 100;
+  line-height: 1.8;
+  color: #5f6263;
+}
+.apps img {
+  width: 100%;
+  height: 100%;
+}
+
+.parallex {
+  background-image: url("../images/index/03.jpg");
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.works .lower .nav-link {
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #222222;
+}
+.works .lower .nav-link.active {
+  color: #E4C083;
+  border: 1px solid #E4C083;
+  border-radius: 0;
+  background-color: unset;
+}
+.works .lower .product {
+  position: relative;
+  height: 250px;
+  padding: 0;
+}
+.works .lower .product img {
+  width: 100%;
+  height: 100%;
+}
+.works .lower .product .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.works .lower .product .overlay .content {
+  text-align: center;
+  margin-top: 80px;
+}
+.works .lower .product .overlay .content h6 {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #ecf0f1;
+  text-transform: capitalize;
+}
+.works .lower .product .overlay .content span {
+  font-size: 0.8rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #ecf0f1;
+}
+.works .lower .product:hover .overlay {
+  display: block;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

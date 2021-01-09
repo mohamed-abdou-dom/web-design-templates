@@ -1,0 +1,133 @@
+body {
+    height: 4000px;
+}
+
+.main-head {
+    background-image: url('../images/mainbg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    .content {
+        h1 {
+            @include font($largeFont,
+            700,
+            1.2,
+            $lightColor);
+        }
+        p {
+            @include font($paraFont,
+            500,
+            1.6,
+            $infoColor);
+        }
+        button {
+            border-radius: 26px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+}
+
+.skills {
+    .intro {
+        h1 {
+            @include font($headFont,
+            700,
+            1.2,
+            $darkColor);
+        }
+        p {
+            @include font($paraFont,
+            400,
+            1.6,
+            $secondryColor);
+        }
+    }
+    .cards {
+        h6 {
+            @include font(13px,
+            500,
+            1.2,
+            $darkColor);
+            text-transform: uppercase;
+        }
+        p {
+            @include font(14px,
+            500,
+            1.2,
+            $infoColor);
+        }
+    }
+}
+
+.dark-new-products {
+    background-color: black;
+    .uk-card {
+        padding: 80px 0;
+        box-shadow: none;
+        background-color: black;
+        img {
+            width: 100%;
+        }
+        h3 {
+            @include font($headFont,
+            700,
+            1.2,
+            $lightColor);
+            text-transform: capitalize;
+        }
+        p {
+            @include font($paraFont,
+            500,
+            1.6,
+            $lightColor);
+            text-transform: capitalize;
+        }
+        button {
+            border-radius: 26px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+}
+
+.light-new-products {
+    background-color: white;
+    .uk-card {
+        padding: 80px 0;
+        box-shadow: none;
+        background-color: white;
+        img {
+            width: 100%;
+        }
+        h3 {
+            @include font($headFont,
+            700,
+            1.2,
+            $darkColor);
+            text-transform: capitalize;
+        }
+        p {
+            @include font($paraFont,
+            500,
+            1.6,
+            $secondryColor);
+            text-transform: capitalize;
+        }
+        button {
+            border-radius: 26px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+}
+
+.slider {
+    .op {
+        width: 450px;
+        img {
+            width: 100%;
+        }
+    }
+}

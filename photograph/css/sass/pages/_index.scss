@@ -1,0 +1,201 @@
+header.main-header {
+    position: relative;
+    height: 100vh;
+    .video-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        .video-bg_video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            @media (min-aspect-ratio: 16/9) {
+                height: 300%;
+                top: -100%;
+            }
+            @media (max-aspect-ratio: 16/9) {
+                width: 300%;
+                left: -100%;
+            }
+        }
+    }
+    .overlay {
+        @include overlay();
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        .content {
+            margin-top: 200px;
+            h1 {
+                @include font($largeFont, 100, 1.2, $lightColor);
+                text-transform: capitalize;
+                @include maxWidth(1200px) {
+                    @include font(40px, 100, 1.2, $lightColor);
+                    text-transform: capitalize;
+                }
+            }
+            p {
+                @include font($smallFont, 100, 1.6, $lightyColor);
+            }
+            button {
+                @include font($smallFont, 100, 1.6, none);
+                &:hover {
+                    color: $lightyColor;
+                    background-color: $infoColor;
+                }
+            }
+        }
+    }
+}
+
+.main-intro {
+    .content {
+        .upper {
+            h2 {
+                @include font($primaryFont, 100, 1.2, $primaryColor);
+                text-transform: capitalize;
+            }
+            p {
+                @include font($secondryFont, 100, 1.8, $infoColor);
+                width: 65%;
+                margin: auto;
+                padding: 35px 0;
+            }
+            button {
+                text-transform: uppercase;
+                @include font($secondryFont, 100, 1.2, $lightColor);
+                &:hover {
+                    color: $infoColor;
+                    background-color: $lightColor;
+                }
+            }
+        }
+        .lower {
+            .content {
+                .num {
+                    @include font($largeFont, 100, 1.2, $primaryColor);
+                }
+                .film {
+                    @include font($smallFont, 100, 1.2, $primaryColor);
+                    text-transform: uppercase;
+                }
+                h2 {
+                    @include font($secondryFont, 500, 1.2, $primaryColor);
+                }
+                p {
+                    @include font($smallFont, 100, 1.8, $infoColor);
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+.cinema {
+    position: relative;
+    height: 500px;
+    .image {
+        background-image: url('../images/home/01.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    .overlay {
+        @include overlay();
+        background-color: rgba($color: #000000, $alpha: .6);
+        .content {
+            padding-top: 15%;
+            button {
+                width: 75px;
+                height: 75px;
+                border-radius: 50% !important;
+                background: transparent;
+                border: 1px solid #fff !important;
+                padding: 0 !important;
+                &:hover {
+                    background-color: $infoColor;
+                    border: 0 !important;
+                }
+                span {
+                    color: #fff;
+                    font-size: 50px;
+                }
+            }
+            h1 {
+                @include font($medFont,
+                100,
+                1.5,
+                $lightColor);
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.films {
+    .head {
+        h2 {
+            @include font($primaryFont,
+            100,
+            1.2,
+            $primaryColor);
+            text-transform: capitalize;
+        }
+        p {
+            @include font($secondryFont,
+            100,
+            1.2,
+            $infoColor);
+            padding: 20px 0;
+        }
+    }
+    .recent {
+        .image {
+            position: relative;
+            margin: 0px 20px;
+            padding: 50px 0;
+            .content {
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .overlay {
+                    @include overlay();
+                    background-color: rgba($color: #000000, $alpha: .7);
+                    h6 {
+                        @include font($smallFont,
+                        100,
+                        1.2,
+                        $lightColor);
+                        text-transform: capitalize;
+                        display: none;
+                    }
+                }
+                &:hover {
+                    h6 {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 20px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.idea {
+    background-color: $infoColor;
+    h1 {
+        @include font($primaryFont,
+        100,
+        1.2,
+        $lightColor);
+        text-transform: capitalize;
+    }
+}

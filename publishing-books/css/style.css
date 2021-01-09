@@ -1,0 +1,686 @@
+* {
+  font-family: "Lora", serif !important;
+}
+
+.page-section {
+  padding: 50px 0;
+}
+
+.intro-head .intro {
+  position: relative;
+  background-image: url("../images/about/01.jpg");
+  background-position: 50% 0%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+.intro-head .intro .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.intro-head .intro .overlay .content {
+  margin-top: 150px;
+}
+.intro-head .intro .overlay .content h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000;
+  text-transform: "capitalize";
+}
+
+.top-nav {
+  height: 80px;
+  padding: 25px;
+  background-color: #ffffff !important;
+}
+.top-nav .uk-navbar-left li a {
+  padding: 4px;
+}
+.top-nav .uk-navbar-left li a span {
+  border: 1px solid #e6e6e6;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  color: #4a4444;
+  transition: 0.4s all ease-in-out;
+}
+.top-nav .uk-navbar-left li a:hover span {
+  background-color: #95adbe;
+  color: #ffffff;
+  border-color: #95adbe;
+}
+@media (max-width: 1100px) {
+  .top-nav .uk-navbar-left {
+    display: none;
+  }
+}
+.top-nav .uk-navbar-center .company-logo {
+  font-family: unset;
+}
+.top-nav .uk-navbar-center .company-logo .head {
+  width: 100%;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ff7a5c;
+  text-transform: "uppercase";
+}
+.top-nav .uk-navbar-center .company-logo .head span {
+  color: #000000b3;
+}
+.top-nav .uk-navbar-center .company-logo .uk-navbar-subtitle {
+  letter-spacing: 4px;
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: "uppercase";
+}
+.top-nav .uk-navbar-right .uk-search {
+  width: 280px;
+}
+.top-nav .uk-navbar-right .uk-search input {
+  border-radius: 26px;
+  padding: 25px 10px;
+  background-color: #EFEFEF;
+}
+.top-nav .uk-navbar-right .uk-search a {
+  background-color: #95ADBE;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: #ffffff;
+  padding: 0 7px;
+}
+@media (max-width: 1100px) {
+  .top-nav .uk-navbar-right {
+    display: none;
+  }
+}
+
+.bottom-nav {
+  height: 80px;
+  background-color: #ffffff !important;
+  border-top: 1px solid #e6e6e6;
+}
+.bottom-nav .uk-navbar-center li {
+  position: relative;
+  padding: 0 8px;
+}
+.bottom-nav .uk-navbar-center li .link {
+  color: #000;
+  font-weight: 500;
+}
+.bottom-nav .uk-navbar-center li .link::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0px;
+  height: 3px;
+  background: #95adbe;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.bottom-nav .uk-navbar-center li:hover .link::before {
+  display: block;
+  width: 100%;
+}
+.bottom-nav .uk-navbar-center li:hover .link {
+  color: #95adbe;
+}
+@media (max-width: 900px) {
+  .bottom-nav .uk-navbar-center {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .bottom-nav .uk-navbar-right a {
+    display: none;
+  }
+}
+
+.main-head .intro {
+  position: relative;
+  background-image: url("../images/mainbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.main-head .intro .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.main-head .intro .overlay .content {
+  margin-top: 150px;
+}
+.main-head .intro .overlay .content h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+}
+.main-head .intro .overlay .content p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #808080;
+  text-transform: "capitalize";
+}
+.main-head .intro .overlay .content button {
+  border-radius: 5px;
+  background-color: #95adbe;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+.main-head .intro .overlay .content .uk-button-secondary {
+  background-color: #ffffff;
+  color: #000000b3;
+}
+
+.types .card-group {
+  position: relative;
+  bottom: 120px;
+}
+.types .card-group .uk-card {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.types .card-group .uk-card .image {
+  border: 1px solid #f5f4f0;
+  height: 120px;
+  width: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  padding: 16px;
+  margin: auto;
+  background: #f5f4f0;
+  transition: 0.5s all ease-in-out;
+}
+.types .card-group .uk-card .image:hover {
+  background-color: #bbb8aa;
+  border: 1px solid #bbb8aa;
+}
+.types .card-group .uk-card h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  text-transform: "capitalize";
+}
+.types .card-group .uk-card p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #808080;
+  text-transform: "capitalize";
+}
+
+.stats .part h3 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  color: #000000;
+  text-transform: "capitalize";
+}
+.stats .part span {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #808080;
+  text-transform: "capitalize";
+  letter-spacing: 3px;
+}
+
+.breif .image {
+  height: 600px;
+  width: 100%;
+}
+.breif .image img {
+  width: 100%;
+  height: 100%;
+}
+.breif .content {
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.breif .content h6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ff7a5c;
+  text-transform: "uppercase";
+  letter-spacing: 3px;
+}
+.breif .content h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "uppercase";
+}
+.breif .content p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.9;
+  color: #808080;
+  text-transform: "capitalize";
+}
+.breif .content button {
+  background-color: #95adbe;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 7px;
+  border: 1px solid #95adbe;
+}
+
+.new-release .intro h6 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ff7a5c;
+  text-transform: "uppercase";
+  text-transform: uppercase !important;
+}
+.new-release .intro h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+  text-transform: capitalize !important;
+  margin: 0;
+  margin-bottom: 80px;
+}
+.new-release .uk-card {
+  height: 350px;
+  height: 100%;
+}
+.new-release .uk-card img {
+  height: 100%;
+  width: 100%;
+}
+.new-release .uk-card .uk-card-media-left .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.new-release .uk-card .uk-card-media-left .overlay .uk-iconnav {
+  float: right;
+}
+.new-release .uk-card .uk-card-media-left .overlay .uk-iconnav a {
+  position: relative;
+  color: #000000;
+  background-color: #ffffff;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
+}
+.new-release .uk-card .uk-card-media-left .overlay .uk-iconnav a:hover {
+  color: #ffffff;
+  background-color: red;
+  border-color: red;
+}
+.new-release .uk-card .uk-card-body {
+  padding: 20px 10px;
+}
+.new-release .uk-card .uk-card-body h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ff7a5c;
+  text-transform: "capitalize";
+}
+.new-release .uk-card .uk-card-body h5 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+  transition: 1s all ease-in-out;
+}
+.new-release .uk-card .uk-card-body span {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #808080;
+  text-transform: "capitalize";
+}
+.new-release .uk-card:hover {
+  background-color: #506675;
+}
+.new-release .uk-card:hover h6,
+.new-release .uk-card:hover h5,
+.new-release .uk-card:hover span {
+  color: #ffffff;
+}
+.new-release .uk-card:hover .overlay {
+  display: block;
+}
+
+.testmonials .image {
+  position: relative;
+  background-image: url("../images/index/testimonials.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+.testmonials .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(186, 209, 224, 0.6);
+}
+.testmonials .uk-slider {
+  position: relative;
+  bottom: 85px;
+}
+.testmonials .uk-slider .uk-card {
+  width: 90%;
+  margin: auto;
+}
+.testmonials .uk-slider .uk-card:hover {
+  cursor: grab;
+}
+
+.recent-blog .intro h6 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ff7a5c;
+  text-transform: "uppercase";
+  text-transform: uppercase !important;
+}
+.recent-blog .intro h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+  text-transform: capitalize !important;
+  margin: 0;
+  margin-bottom: 80px;
+}
+.recent-blog .uk-card {
+  border: none;
+  box-shadow: none;
+}
+.recent-blog .uk-card img {
+  width: 100%;
+}
+.recent-blog .uk-card .uk-card-body {
+  position: relative;
+  bottom: 110px;
+}
+.recent-blog .uk-card .uk-card-body .cal span {
+  display: block;
+  width: 93px;
+  height: 93px;
+  border: 1px solid #f5f4f0;
+  border-radius: 50%;
+  margin: auto;
+  font-size: 28px;
+  line-height: 100%;
+  padding: 20px;
+  background: #f5f4f0;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: 0.6s all ease-in-out;
+}
+.recent-blog .uk-card .uk-card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+  transition: 0.6s all ease-in-out;
+}
+.recent-blog .uk-card .uk-card-body p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #808080;
+  text-transform: "none";
+}
+.recent-blog .uk-card:hover h3 {
+  color: #95ADBE;
+}
+.recent-blog .uk-card:hover span {
+  color: white;
+  background: #ad8383 !important;
+  border-color: #ad8383 !important;
+}
+
+.about-us .head h6 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ff7a5c;
+  text-transform: "uppercase";
+}
+.about-us .head h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+  margin: 0;
+}
+.about-us .body {
+  width: 80%;
+  margin: auto;
+}
+.about-us .body p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #808080;
+  text-transform: "none";
+  margin: 50px 0;
+}
+.about-us .body q {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+}
+
+.top-seller .products .uk-card .uk-card-media-top img {
+  width: 100%;
+}
+.top-seller .products .uk-card .uk-card-media-top .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.top-seller .products .uk-card .uk-card-media-top .overlay .uk-iconnav {
+  float: right;
+}
+.top-seller .products .uk-card .uk-card-media-top .overlay .uk-iconnav a {
+  position: relative;
+  color: #000000;
+  background-color: #ffffff;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
+}
+.top-seller .products .uk-card .uk-card-media-top .overlay .uk-iconnav a:hover {
+  color: #ffffff;
+  background-color: red;
+  border-color: red;
+}
+.top-seller .products .uk-card .uk-card-body {
+  padding: 20px 10px;
+}
+.top-seller .products .uk-card .uk-card-body h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+  transition: 1s all ease-in-out;
+}
+.top-seller .products .uk-card .uk-card-body p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #808080;
+  text-transform: "capitalize";
+}
+.top-seller .products .uk-card:hover {
+  background-color: #506675;
+}
+.top-seller .products .uk-card:hover h3,
+.top-seller .products .uk-card:hover p {
+  color: #ffffff;
+}
+.top-seller .products .uk-card:hover .overlay {
+  display: block;
+}
+.top-seller .right .search form {
+  width: 100%;
+}
+.top-seller .right .search form input {
+  border-radius: 5px;
+  padding: 25px 10px;
+}
+.top-seller .right h2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "uppercase";
+  text-transform: uppercase !important;
+}
+.top-seller .right ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+  text-transform: capitalize !important;
+  text-decoration: none;
+  transition: 0.5s all ease-in-out;
+}
+.top-seller .right ul li span {
+  float: right;
+}
+.top-seller .right ul li:hover {
+  cursor: pointer;
+}
+.top-seller .right ul li:hover a {
+  color: deepskyblue;
+}
+
+.authors .uk-card {
+  max-width: 400px;
+}
+.authors .uk-card .uk-card-media-top .image {
+  position: relative;
+  width: 100%;
+  height: 270px;
+}
+.authors .uk-card .uk-card-media-top .image img {
+  width: 100%;
+  height: 100%;
+}
+.authors .uk-card .uk-card-media-top .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.authors .uk-card .uk-card-media-top .image .overlay ul {
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
+  transition: 0.5s all ease-in-out;
+}
+.authors .uk-card .uk-card-media-top .image .overlay ul a {
+  color: #ffffff;
+  background-color: #95ADBE;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border: 1px solid #95ADBE;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
+}
+.authors .uk-card .uk-card-body h3 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000b3;
+  text-transform: "capitalize";
+  text-transform: capitalize;
+  transition: 0.5s all ease-in-out;
+}
+.authors .uk-card .uk-card-body p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #808080;
+  text-transform: "none";
+}
+.authors .uk-card:hover .uk-card-media-top .image ul {
+  bottom: 40px;
+}
+.authors .uk-card:hover .uk-card-body h3 {
+  color: deepskyblue;
+}
+
+/*# sourceMappingURL=style.css.map */

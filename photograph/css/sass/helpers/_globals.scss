@@ -1,0 +1,40 @@
+// google fonts and icons
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.page-section {
+    padding: 60px 0;
+}
+
+.row,
+.col-md-6,
+.col-md-4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+hr {
+    background-color: $primaryColor;
+}
+
+button {
+    padding: 12px 33px !important;
+    border-radius: 40px !important;
+    transition: 1s all ease-in-out !important;
+    border: none !important;
+}

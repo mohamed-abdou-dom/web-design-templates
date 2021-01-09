@@ -1,0 +1,114 @@
+.top-nav {
+    height: 80px;
+    padding: 25px;
+    background-color: #ffffff !important;
+    .uk-navbar-left {
+        li {
+            a {
+                padding: 4px;
+                span {
+                    border: 1px solid #e6e6e6;
+                    height: 35px;
+                    width: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: #4a4444;
+                    transition: .4s all ease-in-out;
+                }
+                &:hover span {
+                    background-color: #95adbe;
+                    color: #ffffff;
+                    border-color: #95adbe;
+                }
+            }
+        }
+        @include maxWidth(1100px) {
+            display: none;
+        }
+    }
+    .uk-navbar-center {
+        .company-logo {
+            font-family: unset;
+            .head {
+                width: 100%;
+                @include font(25px, 600, 1.2, $headsColor, "uppercase");
+                span {
+                    color: $headColor;
+                }
+            }
+            .uk-navbar-subtitle {
+                letter-spacing: 4px;
+                @include font(13.5px, 400, 1.2, rgba(0, 0, 0, 0.3), "uppercase");
+            }
+        }
+    }
+    .uk-navbar-right {
+        .uk-search {
+            width: 280px;
+            input {
+                border-radius: 26px;
+                padding: 25px 10px;
+                background-color: #EFEFEF;
+            }
+            a {
+                background-color: #95ADBE;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                color: #ffffff;
+                padding: 0 7px;
+            }
+        }
+        @include maxWidth(1100px) {
+            display: none;
+        }
+    }
+}
+
+.bottom-nav {
+    height: 80px;
+    background-color: #ffffff !important;
+    border-top: 1px solid #e6e6e6;
+    .uk-navbar-center {
+        li {
+            position: relative;
+            padding: 0 8px;
+            .link {
+                color: #000;
+                font-weight: 500;
+            }
+            .link::before {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: '';
+                display: block;
+                width: 0px;
+                height: 3px;
+                background: #95adbe;
+                -moz-transition: all 0.4s ease;
+                -o-transition: all 0.4s ease;
+                -webkit-transition: all 0.4s ease;
+                -ms-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+            }
+            &:hover .link::before {
+                display: block;
+                width: 100%;
+            }
+            &:hover .link {
+                color: #95adbe;
+            }
+        }
+        @include maxWidth(900px) {
+            display: none;
+        }
+    }
+    .uk-navbar-right {
+        a {
+            @include minWidth(900px) {
+                display: none;
+            }
+        }
+    }
+}

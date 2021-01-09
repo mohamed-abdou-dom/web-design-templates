@@ -1,0 +1,64 @@
+header.mainHeader {
+    .main-navbar {
+        transition: ease-in 500ms;
+        background: transparent;
+        text-transform: capitalize;
+        padding: 15px 0;
+        .navbar-brand {
+            @include font(1.6em, 800, 1.2, $lightColor);
+        }
+        .nav-item {
+            padding: 0 8px;
+            .nav-link {
+                @include font(1em, 800, 1.2, $lightColor);
+            }
+            button {
+                @include font(1em, 300, 1.2, $lightColor);
+            }
+        }
+    }
+    .main-navbar.scrolled {
+        background: $primaryColor;
+    }
+    .content {
+        position: relative;
+        background-image: url('../images/main.jpg');
+        background-size: cover;
+        height: 100vh;
+        .overlay {
+            @include overlay;
+            background-color: rgba(142, 152, 175, 0.5);
+            .intro {
+                text-align: center;
+                margin-top: 20vh;
+                text-transform: capitalize;
+                h1 {
+                    @include font($largeFont,
+                    500,
+                    1.2,
+                    $lightColor);
+                    @include maxWidth(767px) {
+                        @include font($medFont,
+                        500,
+                        1.2,
+                        $lightColor);
+                    }
+                }
+                p {
+                    @include font($smallFont,
+                    100,
+                    1.6,
+                    $lightyColor);
+                }
+                button {
+                    @include font($smallFont,
+                    100,
+                    1.6,
+                    $lightColor);
+                    text-transform: capitalize;
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}

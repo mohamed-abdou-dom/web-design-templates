@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- uikit -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/framework/uikit.min.css" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize/normalize.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header class="intro-head">
+        <nav class="uk-navbar-container top-nav" uk-navbar>
+
+            <div class="uk-navbar-left">
+                <div class="uk-container">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#"><span uk-icon="icon:facebook; ratio: 1"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span uk-icon="icon:google-plus; ratio: 1"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span uk-icon="icon:twitter; ratio: 1"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span uk-icon="icon:instagram; ratio: 1"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#" class="company-logo">
+                            <div>
+                                <div class="head"><span>publishing</span> company</div>
+                                <div class="uk-navbar-subtitle">book publishing company</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+                <div class="uk-container">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <form class="uk-search uk-search-default">
+                                <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                                <input class="uk-search-input" type="search" placeholder="Search...">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <nav class="uk-navbar-container bottom-nav" uk-navbar>
+            <div class="uk-navbar-center">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li><a class="link" href="index.html">home</a></li>
+                        <li><a class="link" href="about.html">about</a></li>
+                        <li><a class="link" href="top-seller.html">top sellers</a></li>
+                        <li><a class="link" href="book.html">books</a></li>
+                        <li><a class="link" href="author.html">author</a></li>
+                        <li><a class="link" href="blog.html">blog</a></li>
+                        <li><a class="link" href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-flip">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- mobile menu -->
+        <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-active uk-margin-medium-bottom">
+                        <a href="index.html" class="company-logo">
+                            <div>
+                                <div class="head"><span>publishing</span> company</div>
+                                <div class="uk-navbar-subtitle">book publishing company</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="top-seller.html">Top Sellers</a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="book.html">Books</a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="author.html">Author</a>
+                    </li>
+                    <li class="uk-parent uk-margin-small-bottom">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="uk-nav-divider uk-margin-small-bottom"></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- end mobile menu -->
+
+
+        <div class="intro">
+            <div class="overlay">
+                <div class="uk-container">
+                    <div class="content">
+                        <h2>Authors</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- end header -->
+
+    <div class="authors page-section">
+        <div class="uk-container">
+            <div class="uk-child-width-1-1@s uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <div class="image">
+                                <img src="images/authors/01.jpg" alt="">
+                                <div class="overlay">
+                                    <ul class="uk-iconnav">
+                                        <li>
+                                            <a href="#" uk-icon="icon: facebook"></a>
+                                        </li>
+                                        <li>
+                                            <a href=" # " uk-icon="icon: linkedin "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: twitter "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: instagram "></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body ">
+                            <h3 class="uk-card-title">Author name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <div class="image">
+                                <img src="images/authors/02.jpg" alt="">
+                                <div class="overlay">
+                                    <ul class="uk-iconnav">
+                                        <li>
+                                            <a href="#" uk-icon="icon: facebook"></a>
+                                        </li>
+                                        <li>
+                                            <a href=" # " uk-icon="icon: linkedin "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: twitter "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: instagram "></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body ">
+                            <h3 class="uk-card-title ">Author name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <div class="image">
+                                <img src="images/authors/03.jpg" alt="">
+                                <div class="overlay">
+                                    <ul class="uk-iconnav">
+                                        <li>
+                                            <a href="#" uk-icon="icon: facebook"></a>
+                                        </li>
+                                        <li>
+                                            <a href=" # " uk-icon="icon: linkedin "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: twitter "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: instagram "></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body ">
+                            <h3 class="uk-card-title ">Author name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <div class="image">
+                                <img src="images/authors/04.jpg" alt="">
+                                <div class="overlay">
+                                    <ul class="uk-iconnav">
+                                        <li>
+                                            <a href="#" uk-icon="icon: facebook"></a>
+                                        </li>
+                                        <li>
+                                            <a href=" # " uk-icon="icon: linkedin "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: twitter "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: instagram "></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body ">
+                            <h3 class="uk-card-title ">Author name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <div class="image">
+                                <img src="images/authors/05.jpg" alt="">
+                                <div class="overlay">
+                                    <ul class="uk-iconnav">
+                                        <li>
+                                            <a href="#" uk-icon="icon: facebook"></a>
+                                        </li>
+                                        <li>
+                                            <a href=" # " uk-icon="icon: linkedin "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: twitter "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: instagram "></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body ">
+                            <h3 class="uk-card-title ">Author name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <div class="image">
+                                <img src="images/authors/06.jpg" alt="">
+                                <div class="overlay">
+                                    <ul class="uk-iconnav">
+                                        <li>
+                                            <a href="#" uk-icon="icon: facebook"></a>
+                                        </li>
+                                        <li>
+                                            <a href=" # " uk-icon="icon: linkedin "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: twitter "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: instagram "></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body ">
+                            <h3 class="uk-card-title ">Author name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <div class="image">
+                                <img src="images/authors/07.jpg" alt="">
+                                <div class="overlay">
+                                    <ul class="uk-iconnav">
+                                        <li>
+                                            <a href="#" uk-icon="icon: facebook"></a>
+                                        </li>
+                                        <li>
+                                            <a href=" # " uk-icon="icon: linkedin "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: twitter "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: instagram "></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body ">
+                            <h3 class="uk-card-title ">Author name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <div class="image">
+                                <img src="images/authors/08.jpg" alt="">
+                                <div class="overlay">
+                                    <ul class="uk-iconnav">
+                                        <li>
+                                            <a href="#" uk-icon="icon: facebook"></a>
+                                        </li>
+                                        <li>
+                                            <a href=" # " uk-icon="icon: linkedin "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: twitter "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# " uk-icon="icon: instagram "></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body ">
+                            <h3 class="uk-card-title ">Author name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/framework/uikit.min.js "></script>
+    <script src="js/framework/uikit-icons.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="js/custom.js "></script>
+</body>
+
+</html>
